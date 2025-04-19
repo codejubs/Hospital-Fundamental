@@ -200,3 +200,30 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
       }
     }
 ```
+
+### 🛌💉 Registro de Internações
+ As internações são vinculadas aos pacientes, médicos e quartos do hospital.
+
+ ## Code:
+ ```kt
+"_id": "inter06",
+    "id_paciente": "pac14",
+    "CRM_medico": "RJ986342",
+    "data_de_entrada": "2017.04.08 08:00:02",
+    "data_prevista_alta": "2017.04.08 17:00:32",
+    "data_efetiva_alta": "2017.04.09 09:00:04",
+    "procedimentos": [
+      "Terapia Comportamental"
+    ],
+    "quarto": "apto 33",
+    "valor_diaria": "R$200,00 ",
+    "COREN_enfermeiros": [
+      "CRE74832",
+      "CRE85275",
+      "CRE96385"
+    ]
+  }
+```
+
+## MAPA MENTAL
+<img src="<img src="[URL_da_Imagem](https://cdn.discordapp.com/attachments/996915775866679408/1363233745481629768/image.png?ex=680549dc&is=6803f85c&hm=531d48a2dd5e309647a9b5ec304eef42ccdce4d40bdcf9cd4c642a6ea47880a5&)" alt="Meu Mapa Mental">" alt="Texto Alternativo">
