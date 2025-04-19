@@ -7,6 +7,7 @@ Um hospital local precisa desenvolver um sistema para gerenciar seus dados clín
 ## Requisitos do Sistema
 
 ### Cadastro de Médicos
+Alguns registros antigos ainda estão em formulário de papel, mas será necessário incluir esses dados no novo sistema.
 - A coleção de médicos, por exemplo, teria suas características definidas como segue:
 
 - _id (ObjectId)
@@ -16,9 +17,9 @@ Um hospital local precisa desenvolver um sistema para gerenciar seus dados clín
 - tipo (String) - Ex.: "Generalista", "Especialista", "Residente"
 - contato: { telefone (String), email (String) }
 - documentos: { CPF (String), RG (String) }
-- Alguns registros antigos ainda estão em formulário de papel, mas será necessário incluir esses dados no novo sistema.
 
-  Code:
+
+## Code:
   ```Kt
    "_id": "doc1",
     "nome": "Davi Sandro dos Santos",
