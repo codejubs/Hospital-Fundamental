@@ -6,7 +6,7 @@ Um hospital local precisa desenvolver um sistema para gerenciar seus dados clín
 
 ## Requisitos do Sistema
 
-### Cadastro de Médicos
+### 👨‍⚕️ Cadastro de Médicos
 Alguns registros antigos ainda estão em formulário de papel, mas será necessário incluir esses dados no novo sistema.
 - A coleção de médicos, por exemplo, teria suas características definidas como segue:
 
@@ -76,7 +76,7 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
   }
 ```
 
-### Cadastro de Pacientes
+### 🤕 Cadastro de Pacientes
 - Os pacientes também precisam de cadastro, contendo dados pessoais:
  - id
  - Nome
@@ -155,7 +155,7 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
   }
 ```
 
-### Registro de Consultas
+### 🩺💊 Registro de Consultas
 - As consultas também têm sido registradas em planilhas, com as seguintes informações:
  - id
  - CRM_medico
