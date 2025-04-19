@@ -1,4 +1,4 @@
-# Hospital Fundamental - Sistema de Gerenciamento Clínico
+🏥 # Hospital Fundamental - Sistema de Gerenciamento Clínico
 
 ## Descrição do Projeto
 
@@ -90,7 +90,7 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
  - Convenio -> (nome, CNPJ, tempo_carencia e numero_carteira).
  - Alergias -> (alimento, observação e reação)
 
-## CODE:
+## Code:
 ```kt
  "_id": "pac02",
     "nome": "Lucas Fernando Oliveira",
@@ -168,7 +168,7 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
  - Receita -> Medicamentos ->  (nome, quantidade e instruções).
  - Convenio -> (nome, CNPJ, tempo_carencia e numero_carteira).
 
-## CODE:
+## Code:
 ```kt
 "_id": "consul18",
       "CRM_medico": "RJ986342",
