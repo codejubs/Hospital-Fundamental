@@ -157,20 +157,46 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
 
 ### Registro de Consultas
 - As consultas também têm sido registradas em planilhas, com as seguintes informações:
-  - Data e hora de realização
-  - Médico responsável
-  - Paciente
-  - Valor da consulta ou nome do convênio
-  - Número da carteira
-  - Especialidade buscada pelo paciente
+ - id
+ - CRM_medico
+ - id_paciente
+ - Valor
+ - Conveniada (sim/não)
+ - Especialidade_buscada
+ - Descricao
+ - Data_hora
+ - Receita -> Medicamentos ->  (nome, quantidade e instruções).
+ - Convenio -> (nome, CNPJ, tempo_carencia e numero_carteira).
 
-### Receita Médica
-- Deseja-se informatizar a receita do médico, de maneira que, no encerramento da consulta, ele possa registrar:
-  - Medicamentos receitados
-  - Quantidade
-  - Instruções de uso
-- A partir disso, espera-se que o sistema imprima um relatório da receita ao paciente ou permita sua visualização via internet.
-
-## Conclusão
-
-Este sistema visa melhorar o controle das consultas realizadas e a gestão dos dados clínicos no Hospital Fundamental, proporcionando uma solução moderna e eficiente.
+## CODE:
+```kt
+"_id": "consul18",
+      "CRM_medico": "RJ986342",
+      "id_paciente": "pac10",
+      "valor": "240,00",
+      "conveniada": false,
+      "especialidade_buscada": "Psiquiatria",
+      "descricao": "Consulta para avaliação de ansiedade e prescrição de medicamentos.",
+      "data_hora": "2022-08-10 13:00",
+      "receita": {
+        "medicamentos": [
+          {
+            "nome": "Sertralina",
+            "quantidade": "50mg",
+            "instrucoes": "Tomar 1 comprimido ao dia"
+          },
+          {
+            "nome": "Clonazepam",
+            "quantidade": "0,5mg",
+            "instrucoes": "Tomar 1 comprimido à noite"
+          }
+        ]
+      },
+      "convenio": {
+        "nome": "Saúde Acessível",
+        "cpnj": "01.234.567/0001-90",
+        "tempo_carencia": "30 dias",
+        "numero_carteira": "5678901/0006"
+      }
+    }
+```
