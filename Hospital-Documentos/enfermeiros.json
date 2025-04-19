@@ -1,0 +1,287 @@
+[
+  {
+    "nome": "Maycon Kotlin",
+    "data_nascimento": "2000.12.07",
+    "genero": "masculino",
+    "documento": {
+      "cpf": 54938192031,
+      "rg": "14352768",
+      "digito": "2",
+      "coren": "CRE74832"
+    },
+    "endereco": {
+      "rua": "Rua das Flores",
+      "numero": "123",
+      "complemento": "Apto 101",
+      "cep": "10123-456",
+      "bairro": "Jardim das Rosas",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Ana Clara Silva",
+    "data_nascimento": "1995.05.15",
+    "genero": "feminino",
+    "documento": {
+      "cpf": 12345678901,
+      "rg": "98765432",
+      "digito": "3",
+      "coren": "CRE85241"
+    },
+    "endereco": {
+      "rua": "Avenida Brasil",
+      "numero": "456",
+      "complemento": "Casa",
+      "cep": "23456-789",
+      "bairro": "Centro",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Carlos Eduardo",
+    "data_nascimento": "1988.03.22",
+    "genero": "masculino",
+    "documento": {
+      "cpf": 98765432100,
+      "rg": "12345678",
+      "digito": "4",
+      "coren": "CRE96375"
+    },
+    "endereco": {
+      "rua": "Rua do Comércio",
+      "numero": "789",
+      "complemento": "Sala 202",
+      "cep": "34567-890",
+      "bairro": "Vila Nova",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Fernanda Lima",
+    "data_nascimento": "1992.08.30",
+    "genero": "feminino",
+    "documento": {
+      "cpf": 45678912300,
+      "rg": "87654321",
+      "digito": "5",
+      "coren": "CRE14789"
+    },
+    "endereco": {
+      "rua": "Rua da Paz",
+      "numero": "321",
+      "complemento": "Casa",
+      "cep": "45678-901",
+      "bairro": "Jardim das Palmeiras",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Roberto Santos",
+    "data_nascimento": "1985.11.11",
+    "genero": "masculino",
+    "documento": {
+      "cpf": 32165498700,
+      "rg": "13579246",
+      "digito": "6",
+      "coren": "CRE25896"
+    },
+    "endereco": {
+      "rua": "Avenida das Américas",
+      "numero": "654",
+      "complemento": "Bloco B",
+      "cep": "56789-012",
+      "bairro": "Vila Mariana",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Juliana Ferreira",
+    "data_nascimento": "1990.01.25",
+    "genero": "feminino",
+    "documento": {
+      "cpf": 65432198700,
+      "rg": "24681357",
+      "digito": "7",
+      "coren": "CRE36984"
+    },
+    "endereco": {
+      "rua": "Rua do Sol",
+      "numero": "159",
+      "complemento": "Apto 303",
+      "cep": "67890-123",
+      "bairro": "Jardim das Luzes",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Lucas Almeida",
+    "data_nascimento": "1998.09.18",
+    "genero": "masculino",
+    "documento": {
+      "cpf": 78901234567,
+      "rg": "13572468",
+      "digito": "8",
+      "coren": "CRE47820"
+    },
+    "endereco": {
+      "rua": "Rua da Liberdade",
+      "numero": "852",
+      "complemento": "Casa 2",
+      "cep": "78901-234",
+      "bairro": " Vila das Flores",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Tatiane Costa",
+    "data_nascimento": "1993.04.12",
+    "genero": "feminino",
+    "documento": {
+      "cpf": 32198765400,
+      "rg": "65432109",
+      "digito": "9",
+      "coren": "CRE15973"
+    },
+    "endereco": {
+      "rua": "Rua do Trabalho",
+      "numero": "456",
+      "complemento": "Apto 202",
+      "cep": "89012-345",
+      "bairro": "Vila São Jorge",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Fernando Oliveira",
+    "data_nascimento": "1980.07.30",
+    "genero": "masculino",
+    "documento": {
+      "cpf": 65498732100,
+      "rg": "78965412",
+      "digito": "0",
+      "coren": "CRE75319"
+    },
+    "endereco": {
+      "rua": "Avenida dos Trabalhadores",
+      "numero": "321",
+      "complemento": "Casa",
+      "cep": "90123-456",
+      "bairro": "Jardim São Paulo",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Patrícia Mendes",
+    "data_nascimento": "1991.11.05",
+    "genero": "feminino",
+    "documento": {
+      "cpf": 98712345600,
+      "rg": "32165487",
+      "digito": "1",
+      "coren": "CRE86420"
+    },
+    "endereco": {
+      "rua": "Rua da Esperança",
+      "numero": "789",
+      "complemento": "Bloco A",
+      "cep": "23412-678",
+      "bairro": "Vila Nova",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Gustavo Ribeiro",
+    "data_nascimento": "1994.02.20",
+    "genero": "masculino",
+    "documento": {
+      "cpf": 12378945600,
+      "rg": "98712345",
+      "digito": "2",
+      "coren": "CRE85274"
+    },
+    "endereco": {
+      "rua": "Rua da Alegria",
+      "numero": "101",
+      "complemento": "Casa",
+      "cep": "34567-890",
+      "bairro": "Vila das Flores",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Mariana Souza",
+    "data_nascimento": "1987.09.15",
+    "genero": "feminino",
+    "documento": {
+      "cpf": 45612378900,
+      "rg": "65498732",
+      "digito": "3",
+      "coren": "CRE96384"
+    },
+    "endereco": {
+      "rua": "Avenida do Parque",
+      "numero": "202",
+      "complemento": "Apto 101",
+      "cep": "67890-123",
+      "bairro": "Parque da Mooca",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Ricardo Almeida",
+    "data_nascimento": "1990.11.30",
+    "genero": "masculino",
+    "documento": {
+      "cpf": 78945612300,
+      "rg": "32165478",
+      "digito": "4",
+      "coren": "CRE14785"
+    },
+    "endereco": {
+      "rua": "Rua do Comércio",
+      "numero": "303",
+      "complemento": "Sala 5",
+      "cep": "89012-345",
+      "bairro": "Vila Nova",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Sofia Martins",
+    "data_nascimento": "1996.03.10",
+    "genero": "feminino",
+    "documento": {
+      "cpf": 32165498701,
+      "rg": "98765431",
+      "digito": "5",
+      "coren": "CRE85275"
+    },
+    "endereco": {
+      "rua": "Rua da Esperança",
+      "numero": "789",
+      "complemento": "Casa",
+      "cep": "23456-789",
+      "bairro ": "Vila São Jorge",
+      "cidade": "São Paulo"
+    }
+  },
+  {
+    "nome": "Felipe Costa",
+    "data_nascimento": "1989.12.05",
+    "genero": "masculino",
+    "documento": {
+      "cpf": 65432198701,
+      "rg": "12345679",
+      "digito": "8",
+      "coren": "CRE96385"
+    },
+    "endereco": {
+      "rua": "Avenida das Nações",
+      "numero": "456",
+      "complemento": "Apto 202",
+      "cep": "89012-345",
+      "bairro": "Jardim São Paulo",
+      "cidade": "São Paulo"
+    }
+  }
+]

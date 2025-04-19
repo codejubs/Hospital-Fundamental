@@ -1,0 +1,574 @@
+[
+  {
+    "_id": "consul01",
+    "CRM_medico": "SC45938",
+    "id_paciente": "pac02",
+    "valor": "190,00",
+    "conveniada": true,
+    "especialidade_buscada": "Clínico Geral",
+    "descricao": "Consulta para avaliação de dor de cabeça e prescrição de analgésicos.",
+    "data_hora": "2015-03-15 14:30",
+    "receita": {
+      "medicamentos": [
+        {
+          "nome": "Paracetamol",
+          "quantidade": "500mg",
+          "instrucoes": "Tomar 1 comprimido a cada 8 horas"
+        },
+        {
+          "nome": "Amoxicilina",
+          "quantidade": "250mg",
+          "instrucoes": "Tomar 1 cápsula a cada 12 horas"
+        }
+      ]
+    },
+    "convenio": {
+      "nome": "Saúde Total",
+      "cpnj": "98.765.432/0001-01",
+      "tempo_carencia": "30 dias",
+      "numero_carteira": "3456789/0003"
+    }
+  },
+  {
+    "_id": "consul02",
+    "CRM_medico": "SP523469",
+    "id_paciente": "pac04",
+    "valor": "210,00",
+    "conveniada": false,
+    "especialidade_buscada": "Pediatra",
+    "descricao": "Consulta para tratamento de alergia e prescrição de antialérgicos.",
+    "data_hora": "2016-05-20 09:15",
+    "receita": {
+      "medicamentos": [
+        {
+          "nome": "Ibuprofeno",
+          "quantidade": "400mg",
+          "instrucoes": "Tomar 1 comprimido a cada 6 horas"
+        },
+        {
+          "nome": "Cetirizina",
+          "quantidade": "10mg",
+          "instrucoes": "Tomar 1 comprimido ao dia"
+        }
+      ]
+    },
+    "convenio": {
+      "nome": "Saúde Kids",
+      "cpnj": "12.345.678/0001-99",
+      "tempo_carencia": "30 dias",
+      "numero_carteira": "1234567/0001"
+    }
+  },
+  {
+    "_id": "consul03",
+    "CRM_medico": "RJ56324",
+    "id_paciente": "pac13",
+    "valor": "250,00",
+    "conveniada": true,
+    "especialidade_buscada": "Cardiologista",
+    "descricao": "Consulta para controle de hipertensão e prescrição de medicamentos.",
+    "data_hora": "2017-07-10 11:45",
+    "receita": {
+      "medicamentos": [
+        {
+          "nome": "Losartana",
+          "quantidade": "50mg",
+          "instrucoes": "Tomar 1 comprimido ao dia"
+        },
+        {
+          "nome": "Simvastatina",
+          "quantidade": "20mg",
+          "instrucoes": "Tomar 1 comprimido ao dia à noite"
+        }
+      ]
+    },
+    "convenio": {
+      "nome": "Saúde Kids",
+      "cpnj": "12.345.678/0001-11",
+      "tempo_carencia": "30 dias",
+      "numero_carteira": "9012345/0009"
+    }
+  },
+  {
+    "_id": "consul04",
+    "CRM_medico": "SP281020",
+    "id_paciente": "pac01",
+    "valor": "180,00",
+    "conveniada": false,
+    "especialidade_buscada": "Gastroenterologia",
+    "descricao": "Consulta para avaliação de refluxo gastroesofágico e prescrição de medicamentos.",
+    "data_hora": "2018-01-25 16:00",
+    "receita": {
+      "medicamentos": [
+        {
+          "nome": "Omeprazol",
+          "quantidade": "20mg",
+          "instrucoes": "Tomar 1 cápsula antes do café da manhã"
+        },
+        {
+          "nome": "Ranitidina",
+          "quantidade": "150mg",
+          "instrucoes": "Tomar 1 comprimido antes de dormir"
+        }
+      ]
+    },
+    "convenio": {
+      "nome": "Saúde Net",
+      "cpnj": "12.345.678/0001-90",
+      "tempo_carencia": "",
+      "numero_carteira": "2345678/0002"
+    }
+  },
+  {
+    "_id": "consul05",
+    "CRM_medico": "RJ98432",
+    "id_paciente": "pac11",
+    "valor": "230,00",
+    "conveniada": true,
+    "especialidade_buscada": "Nutrologia",
+    "descricao": "Consulta para avaliação nutricional e prescrição de suplementos.",
+    "data_hora": "2019- 03-30 10:30",
+    "receita": {
+      "medicamentos": [
+        {
+          "nome": "Metformina",
+          "quantidade": "500mg",
+          "instrucoes": "Tomar 1 comprimido durante as refeições"
+        },
+        {
+          "nome": "Gliclazida",
+          "quantidade": "60mg",
+          "instrucoes": "Tomar 1 comprimido ao dia"
+        }
+      ]
+    },
+    "convenio": {
+      "nome": "Saúde para Todos",
+      "cpnj": "23.456.789/0001-23",
+      "tempo_carencia": "45 dias",
+      "numero_carteira": "6789012/0007"
+    }
+  },
+  {
+    "_id": "consul06",
+    "CRM_medico": "SP123456",
+    "id_paciente": "pac07",
+    "valor": "200,00",
+    "conveniada": false,
+    "especialidade_buscada": "Cardiologista",
+    "descricao": "Consulta para controle de pressão arterial e prescrição de medicamentos.",
+    "data_hora": "2020-06-15 08:45",
+    "convenio": {
+      "nome": "Saúde Familiar",
+      "cpnj": "56.789.012/0001-34",
+      "tempo_carencia": "45 dias",
+      "numero_carteira": "2345678/0003"
+    }
+  },
+  {
+    "_id": "consul07",
+    "CRM_medico": "RJ986342",
+    "id_paciente": "pac14",
+    "valor": "240,00",
+    "conveniada": true,
+    "especialidade_buscada": "Psiquiatria",
+    "descricao": "Consulta para tratamento de ansiedade e prescrição de ansiolíticos.",
+    "data_hora": "2021-01-10 14:00",
+    "receita": {
+      "medicamentos": [
+        {
+          "nome": "Clonazepam",
+          "quantidade": "0,5mg",
+          "instrucoes": "Tomar 1 comprimido à noite"
+        },
+        {
+          "nome": "Sertralina",
+          "quantidade": "50mg",
+          "instrucoes": "Tomar 1 comprimido ao dia"
+        }
+      ]
+    },
+    "convenio": {
+      "nome": "Care Mid",
+      "cpnj": "22.333.444/0001-23",
+      "tempo_carencia": "20 dias",
+      "numero_carteira": "4567890/0043"
+    }
+  },
+  {
+    "_id": "consul08",
+    "CRM_medico": "CE189764",
+    "id_paciente": "pac09",
+    "valor": "220,00",
+    "conveniada": false,
+    "especialidade_buscada": "Dermatologista",
+    "descricao": "Consulta para tratamento de alergias cutâneas e prescrição de antialérgicos.",
+    "data_hora": "2021-05-22 11:30",
+    "receita": {
+      "medicamentos": [
+        {
+          "nome": "Loratadina",
+          "quantidade": "10mg",
+          "instrucoes": "Tomar 1 comprimido ao dia"
+        },
+        {
+          "nome": "Dipirona",
+          "quantidade": "500mg",
+          "instrucoes": "Tomar 1 comprimido a cada 6 horas se necessário"
+        }
+      ]
+    },
+    "convenio": {
+      "nome": "Saúde Prime",
+      "cpnj": "90.123.456/0001-78",
+      "tempo_carencia": "60 dias",
+      " numero_carteira": "4567890/0005"
+    }
+  },
+  {
+    "_id": "consul09",
+    "CRM_medico": "SP859402",
+    "id_paciente": "pac05",
+    "valor": "195,00",
+    "conveniada": true,
+    "especialidade_buscada": "Neurologista",
+    "descricao": "Consulta para avaliação de enxaqueca e prescrição de medicamentos.",
+    "data_hora": "2021-09-15 15:00",
+    "receita": {
+      "medicamentos": [
+        {
+          "nome": "Fluoxetina",
+          "quantidade": "20mg",
+          "instrucoes": "Tomar 1 comprimido ao dia"
+        },
+        {
+          "nome": "Bromazepam",
+          "quantidade": "3mg",
+          "instrucoes": "Tomar 1 comprimido à noite"
+        }
+      ]
+    },
+    "convenio": {
+      "nome": "Saúde Infantil",
+      "cpnj": "12.345.678/0001-01",
+      "tempo_carencia": "30 dias",
+      "numero_carteira": "9876543/0001"
+    }
+  },
+  {
+    "_id": "consul10",
+    "CRM_medico": "SP281020",
+    "id_paciente": "pac08",
+    "valor": "205,00",
+    "conveniada": false,
+    "especialidade_buscada": "Gastroenterologia",
+    "descricao": "Consulta para tratamento de infecção urinária e prescrição de antibióticos.",
+    "data_hora": "2021-12-01 09:00",
+    "receita": {
+      "medicamentos": [
+        {
+          "nome": "Ciprofloxacino",
+          "quantidade": "500mg",
+          "instrucoes": "Tomar 1 comprimido a cada 12 horas"
+        },
+        {
+          "nome": "Nimesulida",
+          "quantidade": "100mg",
+          "instrucoes": "Tomar 1 comprimido a cada 8 horas"
+        }
+      ]
+    },
+    "convenio": {
+      "nome": "Saúde Jovem",
+      "cpnj": "78.901.234/0001-56",
+      "tempo_carencia": "30 dias",
+      "numero_carteira": "3456789/0004"
+    }
+  },
+  {
+    "_id": "consul11",
+    "CRM_medico": "SP123456",
+    "id_paciente": "pac06",
+    "valor": "215,00",
+    "conveniada": true,
+    "especialidade_buscada": "Cardiologista",
+    "descricao": "Consulta para avaliação de colesterol alto e prescrição de medicamentos.",
+    "data_hora": "2022-01-01 10:00",
+    "receita": {
+      "medicamentos": [
+        {
+          "nome": "Atorvastatina",
+          "quantidade": "10mg",
+          "instrucoes": "Tomar 1 comprimido ao dia"
+        },
+        {
+          "nome": "Aspirina",
+          "quantidade": "100mg",
+          "instrucoes": "Tomar 1 comprimido ao dia"
+        }
+      ]
+    },
+    "convenio": {
+      "nome": "Saúde Total",
+      "cpnj": "34.567.890/0001-12",
+      "tempo_carencia": "60 dias",
+      "numero_carteira": "1234567/0002"
+    }
+  },
+    {
+      "_id": "consul12",
+      "CRM_medico": "CE189764",
+      "id_paciente": "pac09",
+      "valor": "200,00",
+      "conveniada": true,
+      "especialidade_buscada": "Dermatologista",
+      "descricao": "Consulta para tratamento de acne e prescrição de medicamentos tópicos.",
+      "data_hora": "2022-02-10 14:30",
+      "receita": {
+        "medicamentos": [
+          {
+            "nome": "Ácido Salicílico",
+            "quantidade": "2%",
+            "instrucoes": "Aplicar no rosto duas vezes ao dia"
+          },
+          {
+            "nome": "Clindamicina",
+            "quantidade": "1%",
+            "instrucoes": "Aplicar no rosto à noite"
+          }
+        ]
+      },
+      "convenio": {
+        "nome": "Saúde Prime",
+        "cpnj": "90.123.456/0001-78",
+        "tempo_carencia": "60 dias",
+        " numero_carteira": "4567890/0005"
+      }
+    },
+    {
+      "_id": "consul13",
+      "CRM_medico": "RJ85632",
+      "id_paciente": "pac07",
+      "valor": "210,00",
+      "conveniada": false,
+      "especialidade_buscada": "Ginecologista",
+      "descricao": "Consulta para exame de rotina e prescrição de anticoncepcional.",
+      "data_hora": "2022-03-15 09:00",
+      "receita": {
+        "medicamentos": [
+          {
+            "nome": "Drosperinona",
+            "quantidade": "3mg",
+            "instrucoes": "Tomar 1 comprimido ao dia"
+          },
+          {
+            "nome": "Ácido Fólico",
+            "quantidade": "400mcg",
+            "instrucoes": "Tomar 1 comprimido ao dia"
+          }
+        ]
+      },
+      "convenio": {
+        "nome": "Saúde Familiar",
+        "cpnj": "56.789.012/0001-34",
+        "tempo_carencia": "45 dias",
+        "numero_carteira": "2345678/0003"
+      }
+    },
+    {
+      "_id": "consul14",
+      "CRM_medico": "SP523469",
+      "id_paciente": "pac04",
+      "valor": "195,00",
+      "conveniada": true,
+      "especialidade_buscada": "Pediatra",
+      "descricao": "Consulta para acompanhamento de crescimento e desenvolvimento infantil.",
+      "data_hora": "2022-04-20 11:30",
+      "receita": {
+        "medicamentos": [
+          {
+            "nome": "Vitamina D",
+            "quantidade": "400UI",
+            "instrucoes": "Tomar 1 gota ao dia"
+          },
+          {
+            "nome": "Paracetamol",
+            "quantidade": "500mg",
+            "instrucoes": "Tomar 1 comprimido a cada 6 horas se necessário"
+          }
+        ]
+      },
+      "convenio": {
+        "nome": "Saúde Kids",
+        "cpnj": "12.345.678/0001-99",
+        "tempo_carencia": "30 dias",
+        "numero_carteira": "1234567/0001"
+      }
+    },
+    {
+      "_id": "consul15",
+      "CRM_medico": "SP281020",
+      "id_paciente": "pac10",
+      "valor": "185,00",
+      "conveniada": false,
+      "especialidade_buscada": "Gastroenterologia",
+      "descricao": "Consulta para avaliação de refluxo gastroesofágico.",
+      "data_hora": "2022-05-25 10:00",
+      "convenio": {
+        "nome": "Saúde Acessível",
+        "cpnj": "01.234.567/0001-90",
+        "tempo_carencia": "30 dias",
+        "numero_carteira": "5678901/0006"
+      }
+    },
+    {
+      "_id": "consul16",
+      "CRM_medico": "SP568423",
+      "id_paciente": "pac12",
+      "valor": "220,00",
+      "conveniada": true,
+      "especialidade_buscada": "Ortopedista",
+      "descricao": "Consulta para avaliação de dor no joelho e prescrição de fisioterapia.",
+      "data_hora": "2022-06- 15 15:00",
+      "receita": {
+        "medicamentos": [
+          {
+            "nome": "Dipirona",
+            "quantidade": "500mg",
+            "instrucoes": "Tomar 1 comprimido a cada 8 horas se necessário"
+          },
+          {
+            "nome": "Condroitina",
+            "quantidade": "400mg",
+            "instrucoes": "Tomar 1 cápsula duas vezes ao dia"
+          }
+        ]
+      },
+      "convenio": {
+        "nome": "Saúde Infantil",
+        "cpnj": "34.567.890/0001-99",
+        "tempo_carencia": "30 dias",
+        "numero_carteira": "8901234/0008"
+      }
+    },
+    {
+      "_id": "consul17",
+      "CRM_medico": "SP859402",
+      "id_paciente": "pac05",
+      "valor": "230,00",
+      "conveniada": true,
+      "especialidade_buscada": "Neurologista",
+      "descricao": "Consulta para avaliação de dores de cabeça frequentes e prescrição de medicamentos.",
+      "data_hora": "2022-07-05 16:00",
+      "receita": {
+        "medicamentos": [
+          {
+            "nome": "Sumatriptano",
+            "quantidade": "50mg",
+            "instrucoes": "Tomar 1 comprimido ao início da dor"
+          },
+          {
+            "nome": "Amitriptilina",
+            "quantidade": "25mg",
+            "instrucoes": "Tomar 1 comprimido à noite"
+          }
+        ]
+      },
+      "convenio": {
+        "nome": "Saúde Infantil",
+        "cpnj": "12.345.678/0001-01",
+        "tempo_carencia": "30 dias",
+        "numero_carteira": "9876543/0001"
+      }
+    },
+    {
+      "_id": "consul18",
+      "CRM_medico": "RJ986342",
+      "id_paciente": "pac10",
+      "valor": "240,00",
+      "conveniada": false,
+      "especialidade_buscada": "Psiquiatria",
+      "descricao": "Consulta para avaliação de ansiedade e prescrição de medicamentos.",
+      "data_hora": "2022-08-10 13:00",
+      "receita": {
+        "medicamentos": [
+          {
+            "nome": "Sertralina",
+            "quantidade": "50mg",
+            "instrucoes": "Tomar 1 comprimido ao dia"
+          },
+          {
+            "nome": "Clonazepam",
+            "quantidade": "0,5mg",
+            "instrucoes": "Tomar 1 comprimido à noite"
+          }
+        ]
+      },
+      "convenio": {
+        "nome": "Saúde Acessível",
+        "cpnj": "01.234.567/0001-90",
+        "tempo_carencia": "30 dias",
+        "numero_carteira": "5678901/0006"
+      }
+    },
+    {
+      "_id": "consul19",
+      "CRM_medico": "RJ98432",
+      "id_paciente": "pac03",
+      "valor": "250,00",
+      "conveniada": true,
+      "especialidade_buscada": "Nutrologia",
+      "descricao": "Consulta para avaliação nutricional e prescrição de suplementos.",
+      "data_hora": "2022-09-12 11:00",
+      "receita": {
+        "medicamentos": [
+          {
+            "nome": "Ômega 3",
+            "quantidade": "1000mg",
+            "instrucoes": "Tomar 1 cápsula ao dia"
+          },
+          {
+            "nome": "Multivitamínico",
+            "quantidade": "1 comprimido",
+            "instrucoes": "Tomar 1 comprimido ao dia"
+          }
+        ]
+      },
+      "convenio": {
+        "nome": "Medicina Fácil",
+        "cpnj": "34.567.890/0001-12",
+        "tempo_carencia": "60 dias",
+        "numero_carteira": "4567890/0004"
+      }
+    },
+    {
+      "_id": "consul20",
+      "CRM_medico": "SP19832",
+      "id_paciente": "pac08",
+      "valor": "260,00",
+      "conveniada": false,
+      "especialidade_buscada": "Angiologia",
+      "descricao": "Consulta para avaliação de varizes e prescrição de medicamentos.",
+      "data_hora": "2022-10-25 15:30",
+      "receita": {
+        "medicamentos": [
+          {
+            "nome": "Daflon",
+            "quantidade": "500mg",
+            "instrucoes": "Tomar 2 comprimidos ao dia"
+          },
+          {
+            "nome": "Heparina",
+            "quantidade": "5000UI",
+            "instrucoes": "Aplicar conforme orientação médica"
+          }
+        ]
+      },
+      "convenio": {
+        "nome": "Saúde Jovem",
+        "cpnj": "78.901.234/0001-56",
+        "tempo_carencia": "30 dias",
+        "numero_carteira": "3456789/0004"
+      }
+    }
+  ]

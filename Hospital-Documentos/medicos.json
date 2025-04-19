@@ -1,0 +1,758 @@
+[
+  {
+    "_id": "doc1",
+    "nome": "Davi Sandro dos Santos",
+    "data_nascimento": "2001.04.26",
+    "genero": "masculino",
+    "especialidade": "Ortopedista",
+    "tipo": "Ortopedia Geral",
+    "endereço": {
+      "rua/avenida": "Av. Paulista",
+      "numero/bloco": "123",
+      "complemento": "Apto 101",
+      "bairro": "Bela Vista",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "64839-403"
+    },
+    "contato": {
+      "telefone": 11985246203,
+      "whatsapp": true,
+      "email": "davisandro26@hospitalmilu.com",
+      "email_pessoal": "davisandrodoc@gmail.com - não mandar emails sobre trabalho!"
+    },
+    "status": "está em atividade no momento",
+    "observação": "está recebendo pacientes",
+    "em_atividade": true,
+    "documentos": {
+      "CPF": "58654123548",
+      "CRM": "SP568423",
+      "RG": "18934982",
+      "digito": "4"
+    },
+    "agenda": {
+      "segunda-feira": "Plantão",
+      "terca-feira": "Entre 7h à 19h",
+      "quarta-feira": "Entre 8h à 12h",
+      "quinta-feira": "Plantão",
+      "sexta-feira": "Folga",
+      "sabado": "Folga",
+      "domingo": "Entre 8h à 18h",
+      "feriados": "Folga"
+    },
+    "plantao": [
+      {
+        "dia": "Quinta-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      },
+      {
+        "dia": "segunda-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      }
+    ]
+  },
+  {
+    "_id": "doc2",
+    "nome": "João de Almeida",
+    "data_nascimento": "2003.06.16",
+    "genero": "masculino",
+    "especialidade": "Pediatra",
+    "tipo": "Residente",
+    "endereço": {
+      "rua/avenida": "Av. Brigadeiro Faria Lima",
+      "numero/bloco": "456",
+      "complemento": "Casa",
+      "bairro": "Pinheiros",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "05468-000"
+    },
+    "contato": {
+      "telefone": 11652498732,
+      "whatsapp": true,
+      "email": "joaoalmeida16@hospitalmilu.com",
+      "email_pessoal": "joaoalmeidadoc@gmail.com - não mandar emails sobre trabalho!"
+    },
+    "status": "está em atividade no momento",
+    "observação": "está recebendo pacientes",
+    "em_atividade": true,
+    "documentos": {
+      "CPF": 96582342615,
+      "CRM": "SP523469",
+      "RG": "18934983",
+      "digito": "5"
+    },
+    "agenda": {
+      "segunda-feira": "Folga",
+      "terca-feira": "Entre 8h à 18h",
+      "quarta-feira": "Entre 9h à 19h",
+      "quinta-feira": "Plantão",
+      "sexta-feira": "Entre 6h à 12h",
+      "sabado": "Plantão",
+      "domingo": "Entre 10am à 10pm",
+      "feriados": "Folga"
+    },
+    "plantao": [
+      {
+        "dia": "quinta-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      },
+      {
+        "dia": "sabado",
+        "inicio": "20:00",
+        "fim": "14:00"
+      }
+    ]
+  },
+  {
+    "_id": "doc3",
+    "nome": "Ana Julia Lima Sensação",
+    "data_nascimento": "2002.07.06",
+    "genero": "feminino",
+    "especialidade": "Ginecologista",
+    "tipo": "Residente",
+    "end ereço": {
+      "rua/avenida": "Rua da Consolação",
+      "numero/bloco": "789",
+      "complemento": "Casa",
+      "bairro": "Consolação",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "01301-000"
+    },
+    "contato": {
+      "telefone": 21632945872,
+      "whatsapp": true,
+      "email": "anajulima06@hospitalmilu.com",
+      "email_pessoal": "najulimasensacao@gmail.com - não mandar emails sobre trabalho!"
+    },
+    "status": "está em atividade no momento",
+    "observação": "está recebendo pacientes",
+    "em_atividade": true,
+    "documentos": {
+      "CPF": 58426851423,
+      "CRM": "RJ85632",
+      "RG": "18934984",
+      "digito": "6"
+    },
+    "agenda": {
+      "segunda-feira": "Entre 8h à 18h",
+      "terca-feira": "Plantão",
+      "quarta-feira": "Folga",
+      "quinta-feira": "Entre 7h à 12h",
+      "sexta-feira": "Plantão",
+      "sabado": "Folga",
+      "domingo": "Entre 10am à 10pm",
+      "feriados": "Folga"
+    },
+    "plantao": [
+      {
+        "dia": "terça-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      },
+      {
+        "dia": "sexta-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      }
+    ]
+  },
+  {
+    "_id": "doc4",
+    "nome": "Gabriel Kotlin da Silva",
+    "data_nascimento": "1999.02.28",
+    "genero": "masculino",
+    "especialidade": "Cardiologista",
+    "tipo": "Generalista",
+    "endereço": {
+      "rua/avenida": "Av. 23 de Maio",
+      "numero/bloco": "1010",
+      "complemento": "Casa",
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "01311-000"
+    },
+    "contato": {
+      "telefone": 11526482359,
+      "whatsapp": true,
+      "email": "gabrielkotlin@hospitalmilu.com",
+      "email_pessoal": "gabrielkotlindoc@gmail.com - não mandar emails sobre trabalho!"
+    },
+    "status": "não está em atividade no momento",
+    "observação": "não está recebendo pacientes",
+    "em_atividade": false,
+    "documentos": {
+      "CPF": 53462896415,
+      "CRM": "RJ56324",
+      "RG ": "18934985",
+      "digito": "7"
+    },
+    "agenda": {
+      "segunda-feira": "Plantão",
+      "terca-feira": "Folga",
+      "quarta-feira": "Entre 9h à 19h",
+      "quinta-feira": "Plantão",
+      "sexta-feira": "Entre 6h à 12h",
+      "sabado": "Entre 8h à 17h",
+      "domingo": "Plantão",
+      "feriados": "Folga"
+    },
+    "plantao": [
+      {
+        "dia": "segunda-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      },
+      {
+        "dia": "domingo",
+        "inicio": "20:00",
+        "fim": "14:00"
+      }
+    ]
+  },
+  {
+    "_id": "doc5",
+    "nome": "Gustavo Machado Prado",
+    "data_nascimento": "2004.07.21",
+    "genero": "masculino",
+    "especialidade": "Gastrenterologia",
+    "tipo": "Especialista",
+    "endereço": {
+      "rua/avenida": "Rua do Catete",
+      "numero/bloco": "321",
+      "complemento": "Casa",
+      "bairro": "Catete",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "01234-567"
+    },
+    "contato": {
+      "telefone": 11985463257,
+      "whatsapp": true,
+      "email": "gustavoprado21@hospitalmilu.com",
+      "email_pessoal": "gustavomachadodoc@gmail .com - não mandar emails sobre trabalho!"
+    },
+    "status": "está em atividade no momento",
+    "observação": "está recebendo pacientes",
+    "em_atividade": true,
+    "documentos": {
+      "CPF": 25341985642,
+      "CRM": "SP281020",
+      "RG": "18934986",
+      "digito": "8"
+    },
+    "agenda": {
+      "segunda-feira": "Folga",
+      "terca-feira": "Entre 8h à 18h",
+      "quarta-feira": "Plantão",
+      "quinta-feira": "Folga",
+      "sexta-feira": "Plantão",
+      "sabado": "Folga",
+      "domingo": "Entre 10am à 10pm",
+      "feriados": "Folga"
+    },
+    "plantao": [
+      {
+        "dia": "quarta-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      },
+      {
+        "dia": "sexta-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      }
+    ]
+  },
+  {
+    "_id": "doc6",
+    "nome": "Lalune Voxx",
+    "data_nascimento": "2004.08.17",
+    "genero": "feminino",
+    "especialidade": "Psiquiatria",
+    "tipo": "Generalista",
+    "endereço": {
+      "rua/avenida": "Av. das Nações",
+      "numero/bloco": "202",
+      "complemento": "Apto 202",
+      "bairro": "Vila Mariana",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "01234-567"
+    },
+    "contato": {
+      "telefone": 2189765490,
+      "whatsapp": true,
+      "email": "lalunevoxx17@hospitalmilu.com",
+      "email_pessoal": "moonvoxx96@gmail.com - não mandar emails sobre trabalho!"
+    },
+    "status": "está em atividade no momento",
+    "observação": "está recebendo pacientes",
+    "em_atividade": true,
+    "documentos": {
+      "CPF": 98734568902,
+      "CRM": "RJ986342",
+      "RG": "18934987",
+      "digito": "9"
+    },
+    "agenda": {
+      "segunda-feira": "Entre 8h à 18h",
+      "terca-feira": "Plantão",
+      "quarta-feira": "Entre 9h à 19h",
+      "quinta-feira": "Plantão",
+      "sexta-feira": "Folga",
+      "sabado": "Folga",
+      "domingo": "Plantão",
+      "feriados": "Folgado"
+    },
+    "plantao": [
+      {
+        "dia": "terça-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      },
+      {
+        "dia": "domingo",
+        "inicio": "20:00",
+        "fim": "14:00"
+      }
+    ]
+  },
+  {
+    "_id": "doc7",
+    "nome": "Victor Mantovani",
+    "data_nascimento": "2001.03.13",
+    "genero": "masculino",
+    "especialidade": "Dermatologista",
+    "tipo": "Especialista",
+    "endereço": {
+      "rua/avenida": "Rua da Liberdade",
+      "numero/bloco": "88",
+      "complemento": "Casa",
+      "bairro": "Liberdade",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "01234-567"
+    },
+    "contato": {
+      "telefone": 116547865498,
+      "whatsapp": true,
+      "email": "victormantovani13@hospitalmilu.com",
+      "email_pessoal": "victormantovani@gmail.com"
+    },
+    "status": "não está em atividade no momento",
+    "observação": "não está recebendo pacientes",
+    "em_atividade": false,
+    "documentos": {
+      "CPF": 45389762918,
+      "CRM": "CE189764",
+      "RG": "18934988",
+      "digito": "10"
+    },
+    "agenda": {
+      "segunda-feira": "Folga",
+      "terca-feira": "Entre 8h à 18h",
+      "quarta-feira": "Entre 9h à 19h",
+      "quinta-feira": "Plantão",
+      "sexta-feira": "Entre 9h à 19h",
+      "sabado": "Folga",
+      "domingo": "Plantão",
+      "feriados": "Folga"
+    },
+    "plantao": [
+      {
+        "dia": "quinta-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      },
+      {
+        "dia": "domingo",
+        "inicio": "20:00",
+        "fim": "14:00"
+      }
+    ]
+  },
+  {
+    "_id": "doc8",
+    "nome": "Pedro Martins",
+    "data_nascimento": "2000.04.23",
+    "genero": "masculino",
+    "especialidade": "Clinico Geral",
+    "tipo": "Generalista",
+    "endereço": {
+      "rua/avenida": "Av. dos Bandeirantes",
+      "numero/bloco": "1000",
+      "complemento": "Sala 100",
+      "bairro": "Bela Vista",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "01234-567"
+    },
+    "contato": {
+      "telefone": 47985649283,
+      "whatsapp": true,
+      "email": "pedromartins23@hospitalmilu.com",
+      "email_pessoal": "pedromartinsdoc@gmail.com - não mandar emails sobre trabalho!"
+    },
+    "status": "está em atividade no momento",
+    "observação": "está recebendo pacientes",
+    "em_atividade": true,
+    "documentos": {
+      "CPF": 45312894328,
+      "CRM": "SC45938",
+      "RG": "18934989",
+      "digito": "11"
+    },
+    "agenda": {
+      "segunda-feira": "Plantão",
+      "terca-feira": "Entre 8h à 18h",
+      "quarta-feira": "Entre 9h à 19h",
+      "quinta-feira": "Plantão",
+      "sexta-feira": "Folga",
+      "sabado": "Entre 9h à 19h",
+      "domingo": "Entre 10am à 10pm",
+      "feriados": "Folga"
+    },
+    "plantao": [
+      {
+        "dia": "quinta-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      },
+      {
+        "dia": "segunda-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      }
+    ]
+  },
+  {
+    "_id": "doc9",
+    "nome": "Fernanda Costa",
+    "data_nascimento": "1990.11.20",
+    "genero": "feminino",
+    "especialidade": "Neurologista",
+    "tipo": "Residente",
+    "endereço": {
+      "rua/avenida": "Rua dos Três Poderes",
+      "numero/bloco": "15",
+      "complemento": "Casa",
+      "bairro": "Vila Madalena",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "01234-567"
+    },
+    "contato": {
+      "telefone": 16894502398,
+      "whatsapp": true,
+      "email": "fernandacosta20@hospitalmilu.com",
+      "email_pessoal": "fernandacosta@gmail.com - não mandar emails sobre trabalho!"
+    },
+    "status": "está em atividade no momento",
+    "observação": "está recebendo pacientes",
+    "em_atividade": true,
+    "documentos": {
+      "CPF": 67543901832,
+      "CRM": "SP859402",
+      "RG": "18934990",
+      "digito": "12"
+    },
+    "agenda": {
+      "segunda-feira": "Folga",
+      "terca-feira": "Entre 8h à 18h",
+      "quarta-feira": "Folga",
+      "quinta-feira": "Entre 9h à 19h",
+      "sexta-feira": "Plantão",
+      "sabado": "Folga",
+      "domingo": "Plantão",
+      "feriados": "Entre 13h à 20h"
+    },
+    "plantao": [
+      {
+        "dia": "domingo",
+        "inicio": "20:00",
+        "fim": "14:00"
+      },
+      {
+        "dia": "sexta-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      }]},
+      {
+        "_id": "doc10",
+        "nome": "Julia Coelho",
+        "data_nascimento": "1980.12.2",
+        "genero": "feminino",
+        "especialidade": "Terapêuta",
+        "tipo": "Especialista",
+        "endereço": {
+          "rua/avenida": "Av. dos Estados",
+          "numero/bloco": "500",
+          "complemento": "Apto 501",
+          "bairro": "Itaim Bibi",
+          "cidade": "São Paulo",
+          "estado": "São Paulo",
+          "cep": "01234-567"
+        },
+        "contato": {
+          "telefone": 13983210938,
+          "whatsapp": true,
+          "email": "juliacoelho2@hospitalmilu.com",
+          "email_pessoal": "jucoelhosilvadoc@gmail.com"
+        },
+        "status": "está em atividade no momento",
+        "observação": "está recebendo pacientes",
+        "em_atividade": true,
+        "documentos": {
+          "CPF": 37495019382,
+          "CRM": "CE459130",
+          "RG": "18934991",
+          "digito": "13"
+        },
+        "agenda": {
+          "segunda-feira": "Folga",
+          "terca-feira": "Entre 8h à 18h",
+          "quarta-feira": "Plantão",
+          "quinta-feira": "Folga",
+          "sexta-feira": "Entre 9h à 19h",
+          "sabado": "Plantão",
+          "domingo": "Entre 10am à 10pm",
+          "feriados": "Folga"
+        },
+        "plantao": [
+          {
+            "dia": "sabado",
+            "inicio": "20:00",
+            "fim": "14:00"
+          },
+          {
+            "dia": "quarta-feira",
+            "inicio": "20:00",
+            "fim": "14:00"
+          }
+        ]
+      },
+      {
+        "_id": "doc11",
+        "nome": "Denise Carvalho",
+        "genero": "feminino",
+        "data_nascimento": "2002.04.27",
+        "especialidade": "Nutrologia",
+        "tipo": "Residente",
+        "endereço": {
+          "rua/avenida": "Rua da Saúde",
+          "numero/bloco": "22",
+          "complemento": "Casa",
+          "bairro": "Saúde",
+          "cidade": "São Paulo",
+          "estado": "São Paulo",
+          "cep": "01234-567"
+        },
+        "contato": {
+          "telefone": 21984439201,
+          "whatsapp": true,
+          "email": "denisecarvalho27@hospitalmilu.com",
+          "email_pessoal": "denisecarvalhodoc@gmail.com - não mandar emails sobre trabalho!"
+        },
+        "status": "está em atividade no momento",
+        "observação": "está recebendo pacientes",
+        "em_atividade": false,
+        "documentos": {
+          "CPF": 54738918273,
+          "CRM": "RJ98432",
+          "RG": "18934992",
+          "digito": "14"
+        },
+        "agenda": {
+          "segunda-feira": "Folga",
+          "terca-feira": "Plantão",
+          "quarta-feira": "Entre 9h à 19h",
+          "quinta-feira": "Folga",
+          "sexta-feira": "Plantão",
+          "sabado": "Folga",
+          "domingo": "Entre 10am à 10pm",
+          "feriados": "Folga"
+        },
+        "plantao": [
+          {
+            "dia": "terça-feira",
+            "inicio": "20:00",
+            "fim": "14:00"
+          },
+          {
+            "dia": "sexta-feira",
+            "inicio": "20:00",
+            "fim": "14:00"
+          }
+        ]
+      },
+  {
+    "_id": "doc12",
+    "nome": "Vanessa Pires",
+    "genero": "feminino",
+    "data_nascimento": "1983.07.30",
+    "especialidade": "Angiologia",
+    "tipo": "Generalista",
+    "endereço": {
+      "rua/avenida": "Av. dos Bandeirantes",
+      "numero/bloco": "300",
+      "complemento": "Sala 302",
+      "bairro": "Vila Olímpia",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "01234-567"
+    },
+    "contato": {
+      "telefone": 11928321984,
+      "whatsapp": true,
+      "email": "vanessapires30@hospitalmilu.com",
+      "email_pessoal": "vanessapiresdoc@gmail.com"
+    },
+    "status": "está em atividade no momento",
+    "observação": "está recebendo pacientes",
+    "em_atividade": true,
+    "documentos": {
+      "CPF": 54329108312,
+      "CRM": "SP19832",
+      "RG": "18934993",
+      "digito": "15"
+    },
+    "agenda": {
+      "segunda-feira": "Plantão",
+      "terca-feira": "Entre 8h à 18h",
+      "quarta-feira": "Entre 9h à 19h",
+      "quinta-feira": "Plantão",
+      "sexta-feira": "Entre 9h à 19h",
+      "sabado": "Folga",
+      "domingo": "Folga",
+      "feriados": "Folga"
+    },
+    "plantao": [
+      {
+        "dia": "quinta-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      },
+      {
+        "dia": "segunda-feira",
+        "inicio": "20:00",
+        "fim": "14:00"
+      }
+    ]
+   },
+  [
+    {
+      "_id": "doc13",
+      "nome": "Ricardo Almeida",
+      "data_nascimento": "1985.05.15",
+      "genero": "masculino",
+      "especialidade": "Cardiologista",
+      "tipo": "Especialista",
+      "endereço": {
+        "rua/avenida": "Rua dos Três Irmãos",
+        "numero/bloco": "45",
+        "complemento": "Apto 202",
+        "bairro": "Jardim Paulista",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "01415-000"
+      },
+      "contato": {
+        "telefone": 11987654321,
+        "whatsapp": true,
+        "email": "ricardoalmeida@hospitalmilu.com",
+        "email_pessoal": "ricardoalmeidadoc@gmail.com - não mandar emails sobre trabalho!"
+      },
+      "status": "está em atividade no momento",
+      "observação": "está recebendo pacientes",
+      "em_atividade": true,
+      "documentos": {
+        "CPF": 12345678901,
+        "CRM": "SP123456",
+        "RG": "12345678",
+        "digito": "1"
+      },
+      "agenda": {
+        "segunda-feira": "Entre 8h à 18h",
+        "terca-feira": "Plantão",
+        "quarta-feira": "Folga",
+        "quinta-feira": "Entre 9h à 19h",
+        "sexta-feira": "Plantão",
+        "sabado": "Folga",
+        "domingo": "Entre 10am à 10pm",
+        "feriados": "Folga"
+      },
+      "plantao": [
+        {
+          "dia": "terça-feira",
+          "inicio": "20:00",
+          "fim": "14:00"
+        },
+        {
+          "dia": "quinta-feira",
+          "inicio": "20:00",
+          "fim": "14:00"
+        }
+      ]
+    },
+    {
+      "_id": "doc14",
+      "nome": "Mariana Souza",
+      "data_nascimento": "1992.09.10",
+      "genero": "feminino",
+      "especialidade": "Dermatologista",
+      "tipo": "Residente",
+      "endereço": {
+        "rua/avenida": "Av. dos Trabalhadores",
+        "numero/bloco": "88",
+        "complemento": "Sala 101",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "04101-000"
+      },
+      "contato": {
+        "telefone": 11912345678,
+        "whatsapp": true,
+        "email": "marianasouza@hospitalmilu.com",
+        "email_pessoal": "marianasouzadoc@gmail.com - não mandar emails sobre trabalho!"
+      },
+      "status": "está em atividade no momento",
+      "observação": "está recebendo pacientes",
+      "em_atividade": true,
+      "documentos": {
+        "CPF": 98765432100,
+        "CRM": "SP987654",
+        "RG": "87654321",
+        "digito": "2"
+      },
+      "agenda": {
+        "segunda-feira": "Folga",
+        "terca-feira": "Entre 8h à 18h",
+        "quarta-feira": "Entre 9h à 19h",
+        "quinta-feira": "Plantão",
+        "sexta-feira": "Entre 10am à 10pm",
+        "sabado": "Folga",
+        "domingo": "Plantão",
+        "feriados": "Folga"
+      },
+      "plantao": [
+        {
+          "dia": "quinta-feira",
+          "inicio": "20:00",
+          "fim": "14:00"
+        },
+        {
+          "dia": "domingo",
+          "inicio": "20:00",
+          "fim": "14:00"
+        }
+      ]
+    }
+  ]
+  ]

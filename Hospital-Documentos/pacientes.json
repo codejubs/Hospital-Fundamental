@@ -1,0 +1,840 @@
+[
+  {
+    "_id": "pac01",
+    "nome": "Ana Beatris Silva",
+    "data_nascimento": "2000.12.25",
+    "genero": "feminino",
+    "uso_medicamento": false,
+    "documento": {
+      "RG": "12345878",
+      "digito": "9",
+      "CPF": 25364184579,
+      "cartao_sus": 215349857621598,
+      "status_paciente": "1",
+      "data_de_cadastro": "2025.04.10",
+      "ultima_alteracao": "2025.04.10"
+    },
+
+    "contato": {
+      "contato_1": {
+        "email": "anabea2000@gmail.com",
+        "telefone": 11785413654,
+        "whatsapp": true,
+        "telefone_fixo": false
+      },
+
+      "contato_2": {
+        "telefone": 85412685,
+        "whatsapp": false,
+        "telefone_fixo": true
+      }
+    },
+
+    "endereco": {
+      "cep": "85421-985",
+      "rua/avenida": "Rua Tito",
+      "numero/bloco": "112",
+      "complemento": "casa",
+      "bairro": "Vila Romana",
+      "cidade": "São Paulo",
+      "estado": "São Paulo"
+    },
+
+    "tipo_sanguineo": "A+",
+
+    "convenio": {
+      "nome": "Saúde Net",
+      "cpnj": "12.345.678/0001-90",
+      "tempo_carencia": "",
+      "numero_carteira": "2345678/0002"
+    },
+
+    "alergias": {
+      "alergia_1": {
+        "alimento": "Camarão.",
+        "observacao": "Anafilaxia. Muita coceira, muita dor na região abdominal. Tende a piorar ao decorrer do dia. Necessita de internação para repouso.",
+        "reacao": "Coceira, Dor abdominal, Queda de pressão."
+      },
+
+      "alergia_2": {
+        "remedio": "Cetirizina.",
+        "reação": "Diarreira, Confusão Mental."
+      }
+    }
+  },
+
+  {
+    "_id": "pac02",
+    "nome": "Lucas Fernando Oliveira",
+    "data_nascimento": "1995.05.15",
+    "genero": "masculino",
+    "uso_medicamento": false,
+
+    "documento": {
+      "RG": "98765432",
+      "digito": "5",
+      "CPF": 12345678901,
+      "cartao_sus": 987654321234567,
+      "status_paciente": "1",
+      "data_de_cadastro": "2023.08.20",
+      "ultima_alteracao": "2023.08.20"
+    },
+    "contato": {
+      "contato_1": {
+        "email": "lucasfer1995@gmail.com",
+        "telefone": 11987654321,
+        "whatsapp": true,
+        "telefone_fixo": false
+      },
+
+      "contato_2": {
+        "telefone": 1123456789,
+        "whatsapp": false,
+        "telefone_fixo": true
+      }
+    },
+
+    "endereco": {
+      "cep": "12345-678",
+      "rua/avenida": "Avenida Brasil",
+      "numero/bloco": "45",
+      "complemento": "apto 12",
+      "bairro": "Centro",
+      "cidade": "Rio de Janeiro",
+      "estado": "Rio de Janeiro"
+    },
+    "tipo_sanguineo": "O-",
+
+    "convenio": {
+      "nome": "Saúde Total",
+      "cpnj": "98.765.432/0001-01",
+      "tempo_carencia": "30 dias",
+      "numero_carteira": "3456789/0003"
+    },
+
+    "alergias": {
+      "alergia_1": {
+        "alimento": "Amendoim",
+        "observacao": "Reação severa. Necessita de atendimento imediato.",
+        "reacao": "Inchaço, Dificuldade para respirar."
+      },
+
+      "alergia_2": {
+        "remedio": "Ibuprofeno",
+        "reação": "Erupção cutânea, Náusea."
+      }
+    }
+  },
+
+  {
+    "_id": "pac03",
+    "nome": "Mariana Souza Lima",
+    "data_nascimento": "1988.03.22",
+    "genero": "feminino",
+    "uso_medicamento": true,
+    "medicamento": "Sertralina",
+
+    "documento": {
+      "RG": "45678901",
+      "digito": "3",
+      "CPF": 98765432100,
+      "cartao_sus": 123456789012345,
+      "status_paciente": "1",
+      "data_de_cadastro": "2022.11.15",
+      "ultima_alteracao": "2022.11.15"
+    },
+
+    "contato": {
+      "contato_1": {
+        "email": "marianasouza88@gmail.com",
+        "telefone": 11912345678,
+        "whatsapp": true,
+        "telefone_fixo": false
+      },
+
+      "contato_2": {
+        "telefone": 1134567890,
+        "whatsapp": false,
+        "telefone_fixo": true
+      }
+
+    },
+    "endereco": {
+      "cep": "45678-123",
+      "rua/avenida": "Rua das Flores",
+      "numero/bloco": "78",
+      "complemento": "casa 3",
+      "bairro": "Jardim das Acácias",
+      "cidade": "Belo Horizonte",
+      "estado": "Minas Gerais"
+    },
+    "tipo_sanguineo": "B+",
+
+    "convenio": {
+      "nome": "Medicina Fácil",
+      "cpnj": "34.567.890/0001-12",
+      "tempo_carencia": "60 dias",
+      "numero_carteira": "4567890/0004"
+    },
+
+    "alergias": {
+      "alergia_1": {
+        "alimento": "Peixe",
+        "observacao": "Causa desconforto gastrointestinal. Evitar consumo.",
+        "reacao": "Inchaço abdominal, Diarreia."
+      },
+      "alergia_2": {
+        "remedio": "Penicilina",
+        "reação": "Erupção cutânea, Dificuldade respiratória."
+      }
+    }
+  },
+
+  {
+    "_id": "pac04",
+    "nome": "Gabriel Santos Oliveira",
+    "data_nascimento": "2010.07.15",
+    "genero": "masculino",
+    "uso_medicamento": false,
+
+    "documento": {
+      "RG": "12345678",
+      "digito": "1",
+      "CPF": 12345678901,
+      "cartao_sus": 987654321012345,
+      "status_paciente": "1",
+      "data_de_cadastro": "2023.01.10",
+      "ultima_alteracao": "2023.01.10"
+    },
+
+    "contato": {
+      "contato_1": {
+        "email": "mariliacarvalho45@gmail.com",
+        "telefone": 11987654321,
+        "whatsapp": true,
+        "telefone_fixo": false,
+        "observacao": "O email e o contato de whatsapp é da responsavel 'Marilia Cecilia', responsavel do paciente."
+      },
+
+      "contato_2": {
+        "telefone": 1123456789,
+        "whatsapp": false,
+        "telefone_fixo": true
+      }
+
+    },
+    "endereco": {
+      "cep": "12345-678",
+      "rua/avenida": "Avenida das Palmeiras",
+      "numero/bloco": "100",
+      "complemento": "apto 5",
+      "bairro": "Parque das Flores",
+      "cidade": "São Paulo",
+      "estado": "São Paulo"
+    },
+
+    "tipo_sanguineo": "A+",
+    "convenio": {
+      "nome": "Saúde Kids",
+      "cpnj": "12.345.678/0001-99",
+      "tempo_carencia": "30 dias",
+      "numero_carteira": "1234567/0001"
+    },
+
+    "alergias": {
+      "alergia_1": {
+        "alimento": "Nozes",
+        "observacao": "Causa reações alérgicas severas. Evitar consumo.",
+        "reacao": "Inchaço, Coceira, Dificuldade para respirar."
+      },
+
+      "alergia_2": {
+        "remedio": "Aspirina",
+        "reação": "Erupção cutânea, Náusea."
+      }
+    }
+  },
+
+    {
+      "_id": "pac05",
+      "nome": "Ana Clara Ribeiro",
+      "data_nascimento": "2015.02.10",
+      "genero": "feminino",
+      "uso_medicamento": false,
+
+      "documento": {
+        "RG": "98765432",
+        "digito": "4",
+        "CPF": 23456789012,
+        "cartao_sus": 123456789012345,
+        "status_paciente": "1",
+        "data_de_cadastro": "2023.03.01",
+        "ultima_alteracao": "2023.03.01"
+      },
+
+      "contato": {
+        "contato_1": {
+          "email": "pedrojose0@gmail.com",
+          "telefone": 11912345678,
+          "whatsapp": true,
+          "telefone_fixo": false,
+          "observacao": "O email e o contato de whatsapp é da responsavel 'Pedro Jose', responsavel do paciente."
+        },
+
+        "contato_2": {
+          "telefone": 1123456789,
+          "whatsapp": false,
+          "telefone_fixo": true
+        }
+      },
+
+      "endereco": {
+        "cep": "45678-123",
+        "rua/avenida": "Rua das Acácias",
+        "numero/bloco": "45",
+        "complemento": "casa 2",
+        "bairro": "Jardim das Flores",
+        "cidade": "Curitiba",
+        "estado": "Paraná"
+      },
+
+      "tipo_sanguineo": "O+",
+      "convenio": {
+        "nome": "Saúde Infantil",
+        "cpnj": "12.345.678/0001-01",
+        "tempo_carencia": "30 dias",
+        "numero_carteira": "9876543/0001"
+      },
+
+      "alergias": {
+        "alergia_1": {
+          "alimento": "Leite",
+          "observacao": "Causa reações alérgicas. Evitar consumo.",
+          "reacao": "Inchaço, Coceira."
+        }
+      }
+    },
+
+    {
+      "_id": "pac06",
+      "nome": "Pedro Henrique Silva",
+      "data_nascimento": "2011.09.05",
+      "genero": "masculino",
+      "uso_medicamento": false,
+
+      "documento": {
+        "RG": "12345678",
+        "digito": "2",
+        "CPF": 34567890123,
+        "cartao_sus": 234567890123456,
+        "status_paciente": "1",
+        "data_de_cadastro": "2023.02.15",
+        "ultima_alteracao": "2023.02.15"
+      },
+
+      "contato": {
+        "contato_1": {
+          "email": "robertaconceicao@gmail.com",
+          "telefone": 11923456789,
+          "whatsapp": true,
+          "telefone_fixo": false,
+          "observacao": "O email e o contato de whatsapp é da responsavel 'Marilia Cecilia', responsavel do paciente."
+        },
+
+        "contato_2": {
+          "telefone": 1134567890,
+          "whatsapp": false,
+          "telefone_fixo": true
+        }
+      },
+
+      "endereco": {
+        "cep": "12345-678",
+        "rua/avenida": "Avenida das Palmeiras",
+        "numero/bloco": "100",
+        "complemento": "casa 1",
+        "bairro": "Centro",
+        "cidade": "São Paulo",
+        "estado": "São Paulo"
+      },
+
+      "tipo_sanguineo": "A-",
+      "convenio": {
+        "nome": "Saúde Total",
+        "cpnj": "34.567.890/0001-12",
+        "tempo_carencia": "60 dias",
+        "numero_carteira": "1234567/0002"
+      },
+
+      "alergias": {
+        "alergia_1": {
+          "alimento": "Frutos do mar",
+          "observacao": "Causa reações alérgicas severas.",
+          "reacao": "Inchaço, Dificuldade para respirar."
+        }
+      }
+    },
+
+    {
+      "_id": "pac07",
+      "nome": "Isabela Costa",
+      "data_nascimento": "2004.12.30",
+      "genero": "feminino",
+      "uso_medicamento": true,
+      "medicamentos": "Diazepam",
+
+      "documento": {
+        "RG": "87654321",
+        "digito": "5",
+        "CPF": 45678901234,
+        "cartao_sus": 345678901234567,
+        "status_paciente": "1",
+        "data_de_cadastro": "2023.01.20",
+        "ultima_alteracao": "2023.01.20"
+      },
+
+      "contato": {
+        "contato_1": {
+          "email": "isabelacosta@gmail.com",
+          "telefone": 11934567890,
+          "whatsapp": true,
+          "telefone _fixo": false
+        },
+
+        "contato_2": {
+          "telefone": 1145678901,
+          "whatsapp": false,
+          "telefone_fixo": true
+        }
+      },
+
+      "endereco": {
+        "cep": "98765-432",
+        "rua/avenida": "Rua das Orquídeas",
+        "numero/bloco": "12",
+        "complemento": "apto 3",
+        "bairro": "Jardim das Rosas",
+        "cidade": "Rio de Janeiro",
+        "estado": "Rio de Janeiro"
+      },
+
+      "tipo_sanguineo": "B-",
+      "convenio": {
+        "nome": "Saúde Familiar",
+        "cpnj": "56.789.012/0001-34",
+        "tempo_carencia": "45 dias",
+        "numero_carteira": "2345678/0003"
+      },
+
+      "alergias": {
+        "alergia_1": {
+          "alimento": "Glúten",
+          "observacao": "Causa reações alérgicas. Evitar consumo.",
+          "reacao": "Dor abdominal, Diarreia."
+        }
+      }
+    },
+
+    {
+      "_id": "pac08",
+      "nome": "Lucas Almeida",
+      "data_nascimento": "2014.05.22",
+      "genero": "masculino",
+      "uso_medicamento": false,
+
+      "documento": {
+        "RG": "23456789",
+        "digito": "3",
+        "CPF": 56789012345,
+        "cartao_sus": 456789012345678,
+        "status_paciente": "1",
+        "data_de_cadastro": "2023.04.10",
+        "ultima_alteracao": "2023.04.10"
+      },
+
+      "contato": {
+        "contato_1": {
+          "email": "lucasalmeida@gmail.com",
+          "telefone": 11945678901,
+          "whatsapp": true,
+          "telefone_fixo": false
+        },
+
+        "contato_2": {
+          "telefone": 1156789012,
+          "whatsapp": false,
+          "telefone_fixo": true
+        }
+      },
+
+      "endereco": {
+        "cep": "54321-678",
+        "rua/avenida": "Avenida das Estrelas",
+        "numero/bloco": "200",
+        "complemento": "casa 4",
+        "bairro": "Vila Nova",
+        "cidade": "Belo Horizonte",
+        "estado": "Minas Gerais"
+      },
+
+      "tipo_sanguineo": "AB+",
+      "convenio": {
+        "nome": "Saúde Jovem",
+        "cpnj": "78.901.234/0001-56",
+        "tempo_carencia": "30 dias",
+        "numero_carteira": "3456789/0004"
+      },
+
+      "alergias": {
+        "alergia_1": {
+          "alimento": "Soja",
+          "observacao": "Causa reações alérgicas. Evitar consumo.",
+          "reacao": "Inchaço, Coceira."
+        }
+      }
+    },
+
+    {
+      "_id": "pac09",
+      "nome": "Mariana Lima",
+      "data_nascimento": "2012.11.11",
+      "genero": "feminino",
+      "uso_medicamento": false,
+
+      "documento": {
+        "RG": "34567890",
+        "digito": "6",
+        "CPF": 67890123456,
+        "cartao_sus": 567890123456789,
+        "status_paciente": "1",
+        "data_de_cadastro": "2023.05.05",
+        "ultima_alteracao": "2023.05.05"
+      },
+
+      "contato": {
+        "contato_1": {
+          "email": "marianalima@gmail.com",
+          "telefone": 11956789012,
+          "whatsapp": true,
+          "telefone_fixo": false
+        },
+
+        "contato_2": {
+          "telefone": 1167890123,
+          "whatsapp": false,
+          "telefone_fixo": true
+        }
+      },
+
+      "endereco": {
+        "cep": "67890-123",
+        "rua/avenida": "Rua do Sol",
+        "numero/bloco": "300",
+        "complemento": "apto 6",
+        "bairro": "Luz do Sol",
+        "cidade": "Salvador",
+        "estado": "Bahia"
+      },
+
+      "tipo_sanguineo": "O-",
+      "convenio": {
+        "nome": "Saúde Prime",
+        "cpnj": "90.123.456/0001-78",
+        "tempo_carencia": "60 dias",
+        " numero_carteira": "4567890/0005"
+      },
+
+      "alergias": {
+        "alergia_1": {
+          "alimento": "Ovo",
+          "observacao": "Causa reações alérgicas. Evitar consumo.",
+          "reacao": "Inchaço, Coceira."
+        }
+      }
+    },
+
+    {
+      "_id": "pac10",
+      "nome": "Rafael Martins",
+      "data_nascimento": "1990.03.18",
+      "genero": "masculino",
+      "uso_medicamento": true,
+      "medicamentos": "Fluoxetina",
+
+      "documento": {
+        "RG": "45678901",
+        "digito": "7",
+        "CPF": 78901234567,
+        "cartao_sus": 678901234567890,
+        "status_paciente": "1",
+        "data_de_cadastro": "2023.06.12",
+        "ultima_alteracao": "2023.06.12"
+      },
+      "contato": {
+        "contato_1": {
+          "email": "rafaelmartins@gmail.com",
+          "telefone": 11967890123,
+          "whatsapp": true,
+          "telefone_fixo": false
+        },
+
+        "contato_2": {
+          "telefone": 1178901234,
+          "whatsapp": false,
+          "telefone_fixo": true
+        }
+      },
+
+      "endereco": {
+        "cep": "78901-234",
+        "rua/avenida": "Rua da Esperança",
+        "numero/bloco": "400",
+        "complemento": "casa 7",
+        "bairro": "Vila Esperança",
+        "cidade": "Fortaleza",
+        "estado": "Ceará"
+      },
+
+      "tipo_sanguineo": "B+",
+      "convenio": {
+        "nome": "Saúde Acessível",
+        "cpnj": "01.234.567/0001-90",
+        "tempo_carencia": "30 dias",
+        "numero_carteira": "5678901/0006"
+      },
+
+      "alergias": {
+        "alergia_1": {
+          "alimento": "Peixe",
+          "observacao": "Causa reações alérgicas. Evitar consumo.",
+          "reacao": "Inchaço, Dificuldade para respirar."
+        }
+      }
+    },
+
+    {
+      "_id": "pac11",
+      "nome": "Sofia Pereira",
+      "data_nascimento": "2003.08.25",
+      "genero": "feminino",
+      "uso_medicamento": true,
+      "medicamento": "Loratadina",
+
+      "documento": {
+        "RG": "56789012",
+        "digito": "8",
+        "CPF": 89012345678,
+        "cartao_sus": 789012345678901,
+        "status_paciente": "1",
+        "data_de_cadastro": "2023.07.20",
+        "ultima_alteracao": "2023.07.20"
+      },
+
+      "contato": {
+        "contato_1": {
+          "email": "sofiapereira@gmail.com",
+          "telefone": 11978901234,
+          "whatsapp": true,
+          "telefone_fixo": false
+        },
+
+        "contato_2": {
+          "telefone": 1189012345,
+          "whatsapp": false,
+          "telefone_fixo": true
+        }
+      },
+
+      "endereco": {
+        "cep": "89012-345",
+        "rua/avenida": "Avenida da Liberdade",
+        "numero/bloco": "500",
+        "complemento": "apto 8",
+        "bairro": "Liberdade",
+        "cidade": "Brasília",
+        "estado": "Distrito Federal"
+      },
+
+      "tipo_sanguineo": "AB-",
+      "convenio": {
+        "nome": "Saúde para Todos",
+        "cpnj": "23.456.789/0001-23",
+        "tempo_carencia": "45 dias",
+        "numero_carteira": "6789012/0007"
+      },
+
+      "alergias": {
+        "alergia_1": {
+          "alimento": "Amendoim",
+          "observacao": "Causa reações alérgicas severas. Evitar consumo.",
+          "reacao": "Inchaço, Dificuldade para respirar."
+        }
+      }
+    },
+
+    {
+      "_id": "pac12",
+      "nome": "Eduardo Gomes",
+      "data_nascimento": "2018.01.30",
+      "genero": "masculino",
+      "uso_medicamento": false,
+
+      "documento": {
+        "RG": "67890123",
+        "digito": "9",
+        "CPF": 90123456789,
+        "cartao_sus": 890123456789012,
+        "status_paciente": "1",
+        "data_de_cadastro": "2023.08.15",
+        "ultima_alteracao": "2023.08.15"
+      },
+
+      "contato": {
+        "contato_1": {
+          "email": "eduardogomes@gmail.com",
+          "telefone": 11989012345,
+          "whatsapp": true,
+          "telefone_fixo": false
+        },
+
+        "contato_2": {
+          "telefone": 1190123456,
+          "whatsapp": false,
+          "telefone_fixo": true
+        }
+      },
+
+      "endereco": {
+        "cep": "90123-456",
+        "rua/avenida": "Rua do Futuro",
+        "numero/bloco": "600",
+        "complemento": "casa 9",
+        "bairro": "Nova Esperança",
+        "cidade": "Natal",
+        "estado": "Rio Grande do Norte"
+      },
+
+      "tipo_sanguineo": "O+",
+      "convenio": {
+        "nome": "Saúde Infantil",
+        "cpnj": "34.567.890/0001-99",
+        "tempo_carencia": "30 dias",
+        "numero_carteira": "8901234/0008"
+      },
+
+      "alergias": {
+        "alergia_1": {
+          "alimento": "Lactose",
+          "observacao": "Causa desconforto gastrointestinal. Evitar consumo.",
+          "reacao": "Inchaço abdominal, Diarreia."
+        }
+      }
+    },
+
+    {
+      "_id": "pac13",
+      "nome": "Clara Mendes",
+      "data_nascimento": "2001.04.12",
+      "genero": "feminino",
+      "uso_medicamento": false,
+
+      "documento": {
+        "RG": "78901234",
+        "digito": "0",
+        "CPF": 12345678900,
+        "cartao_sus": 901234567890123,
+        "status_paciente": "1",
+        "data_de_cadastro": "2023.09.10",
+        "ultima_alteracao": "2023.09.10"
+      },
+
+      "contato": {
+        "contato_1": {
+          "email": "claramendes@gmail.com",
+          "telefone": 11990123456,
+          "whatsapp": true,
+          "telefone_fixo": false
+        },
+
+        "contato_2": {
+          "telefone": 1191234567,
+          "whatsapp": false,
+          "telefone_fixo": true
+        }
+      },
+
+      "endereco": {
+        "cep": "01234-567",
+        "rua/avenida": "Avenida do Sol",
+        "numero/bloco": "700",
+        "complemento": "apto 10",
+        "bairro": "Sol Nascente",
+        "cidade": "Florianópolis",
+        "estado": "Santa Catarina"
+      },
+
+      "tipo_sanguineo": "A+",
+      "convenio": {
+        "nome": "Saúde Kids",
+        "cpnj": "12.345.678/0001-11",
+        "tempo_carencia": "30 dias",
+        "numero_carteira": "9012345/0009"
+      },
+
+      "alergias": {
+        "alergia_1": {
+          "alimento": "Frutos do mar",
+          "observacao": "Causa reações alérgicas severas.",
+          "reacao": "Inchaço, Dificuldade para respirar."
+        }
+      }
+    },
+  {
+    "_id": "pac14",
+    "nome": "Stephany Souza",
+    "data_nascimento": "2003.10.26",
+    "genero": "feminino",
+    "uso_medicamento": true,
+    "medicamento": "Dipirona",
+    "documento": {
+      "RG": "84501983",
+      "digito": "8",
+      "CPF": 54910928345,
+      "cartao_sus": 765019834291875,
+      "status_paciente": "1",
+      "data_de_cadastro": "2023.08.15",
+      "ultima_alteracao": "2023.08.15"
+    },
+    "contato": {
+      "contato_1": {
+        "email": "ste.souza26@gmail.com",
+        "telefone": 19981923874,
+        "whatsapp": true,
+        "telefone_fixo": false
+      }
+    },
+    "endereco": {
+      "cep": "88345-345",
+      "rua/avenida": "Rua Limoes Claro",
+      "numero/bloco": "45",
+      "complemento": "apto 14",
+      "bairro": "Jardim Flores",
+      "cidade": "São Paulo",
+      "estado": "São Paulo"
+    },
+    "tipo_sanguineo": "A+",
+    "convenio": {
+      "nome": "Care Mid",
+      "cpnj": "22.333.444/0001-23",
+      "tempo_carencia": "20 dias",
+      "numero_carteira": "4567890/0043"
+    },
+    "alergias": {
+      "alergia_1": {
+        "alimento": "Penicilina",
+        "observacao": "Dores de cabeça e Náuseas.",
+        "reacao": "Dificuldade para respirar."
+      }
+    }
+  }
+ ]

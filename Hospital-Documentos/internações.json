@@ -1,0 +1,166 @@
+[
+  {
+    "_id": "inter01",
+    "id_paciente": "pac14",
+    "CRM_medico": "RJ986342",
+    "data_de_entrada": "2016.04.02 14:00:59",
+    "data_prevista_alta": "2016.04.05 10:56:50",
+    "data_efetiva_alta": "2016.04.06 09:30:01",
+    "procedimentos": [
+      "Exame de Sangue",
+      "Observação Psiquiátrica"
+    ],
+    "quarto": "apto 30",
+    "valor_diaria": "R$200,00",
+    "COREN_enfermeiros": [
+      "CRE74832",
+      "CRE85241"
+    ]
+  },
+  {
+    "_id": "inter02",
+    "id_paciente": "pac01",
+    "CRM_medico": "RJ56324",
+    "data_de_entrada": "2021.12.02 08:38:00",
+    "data_prevista_alta": "2022.01.05 15:00:34",
+    "data_efetiva_alta": "2022.01.05 14:45:00",
+    "procedimentos": [
+      "Cirurgia Cardíaca",
+      "Exame de Sangue",
+      "Eletrocardiograma"
+    ],
+    "quarto": "Quarto Duplo",
+    "valor_diaria": "R$400,00",
+    "COREN_enfermeiros": [
+      "CRE96375",
+      "CRE14789"
+    ]
+  },
+  {
+    "_id": "inter03",
+    "id_paciente": "pac10",
+    "CRM_medico": "SP859402",
+    "data_de_entrada": "2020.03.02 11:00:45",
+    "data_prevista_alta": "2020.03.15 16:00:33",
+    "data_efetiva_alta": "2020.04.05 10:00:02",
+    "procedimentos": [
+      "Cirurgia Neurológica",
+      "Tomografia"
+    ],
+    "quarto": "Quarto Duplo",
+    "valor_diaria": "R$400,00",
+    "COREN_enfermeiros": [
+      "CRE36984",
+      "CRE14789",
+      "CRE47820"
+    ]
+  },
+  {
+    "_id": "inter04",
+    "id_paciente": "pac06",
+    "CRM_medico": "SP568423",
+    "data_de_entrada": "2018.12.20 09:34:50",
+    "data_prevista_alta": "2019.02.01 14:00:55",
+    "data_efetiva_alta": "2019.01.29 11:30:59",
+    "procedimentos": [
+      "Cirurgia Ortopédica",
+      "Raio-x",
+      "Exame de Sangue"
+    ],
+    "quarto": "Enfermaria",
+    "valor_diaria": "R$100,00",
+    "COREN_enfermeiros": [
+      "CRE96375",
+      "CRE25896"
+    ]
+  },
+  {
+    "_id": "inter05",
+    "id_paciente": "pac12",
+    "CRM_medico": "SP523469",
+    "data_de_entrada": "2018.01.20 10:00:03",
+    "data_prevista_alta": "2018.02.15 12:00:01",
+    "data_efetiva_alta": "2018.02.03 15:30:00",
+    "procedimentos": [
+      "Cirurgia Apendicectomia",
+      "Exame de Sangue"
+    ],
+    "quarto": "Enfermaria",
+    "valor_diaria": "R$100,00",
+    "COREN_enfermeiros": [
+      "CRE47820",
+      "CRE74832"
+    ]
+  },
+  {
+    "_id": "inter06",
+    "id_paciente": "pac14",
+    "CRM_medico": "RJ986342",
+    "data_de_entrada": "2017.04.08 08:00:02",
+    "data_prevista_alta": "2017.04.08 17:00:32",
+    "data_efetiva_alta": "2017.04.09 09:00:04",
+    "procedimentos": [
+      "Terapia Comportamental"
+    ],
+    "quarto": "apto 33",
+    "valor_diaria": "R$200,00 ",
+    "COREN_enfermeiros": [
+      "CRE74832",
+      "CRE85275",
+      "CRE96385"
+    ]
+  },
+  {
+    "_id": "inter07",
+    "id_paciente": "pac05",
+    "CRM_medico": "SP523469",
+    "data_de_entrada": "2022.02.08 03:27:02",
+    "data_prevista_alta": "2022.02.25 12:55:20",
+    "data_efetiva_alta": "2022.02.25 22:50:55",
+    "procedimentos": [
+      "Cirurgia Herniorrafia"
+    ],
+    "quarto": "apto 122",
+    "valor_diaria": "R$220,00",
+    "COREN_enfermeiros": [
+      "CRE14789",
+      "CRE14785"
+    ]
+  },
+  {
+    "_id": "inter08",
+    "id_paciente": "pac11",
+    "CRM_medico": "RJ85632",
+    "data_de_entrada": "2022.04.04 12:34:27",
+    "data_prevista_alta": "2022.04.10 13:20:33",
+    "data_efetiva_alta": "2022.04.12 16:40:50",
+    "procedimentos": [
+      "Exame Especular",
+      "Ultrassom Vaginal"
+    ],
+    "quarto": "apto 80",
+    "valor_diaria": "R$200,00",
+    "COREN_enfermeiros": [
+      "CRE36984",
+      "CRE85241"
+    ]
+  },
+  {
+    "_id": "inter09",
+    "id_paciente": "pac01",
+    "CRM_medico": "SP123456",
+    "data_de_entrada": "2021.03.02 09:00:00",
+    "data_prevista_alta": "2021.03.15 14:00:33",
+    "data_efetiva_alta": "2021.03.20 11:00:50",
+    "procedimentos": [
+      "Exame de Sangue",
+      "Eletrocardiograma"
+    ],
+    "quarto": "Enfermaria",
+    "valor_diaria": "R$200,00",
+    "COREN_enfermeiros": [
+      "CRE96375",
+      "CRE85241"
+    ]
+  }
+]
