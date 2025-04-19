@@ -11,11 +11,11 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
 - A coleção de médicos, por exemplo, teria suas características definidas como segue:
 
 - _id (ObjectId)
-- nome (String)
+ - nome (String)
 - data_nascimento (Date)
-- especialidades (Array de Strings) - Ex.: ["Pediatria", "Clínica Geral"]
+ - especialidades (Array de Strings) - Ex.: ["Pediatria", "Clínica Geral"]
 - tipo (String) - Ex.: "Generalista", "Especialista", "Residente"
-- contato: { telefone (String), email (String) }
+ - contato: { telefone (String), email (String) }
 - documentos: { CPF (String), RG (String) }
 
 
@@ -78,18 +78,82 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
 
 ### Cadastro de Pacientes
 - Os pacientes também precisam de cadastro, contendo dados pessoais:
-  - Nome
-  - Data de nascimento
-  - Endereço
-  - Telefone
-  - E-mail
-- Documentos:
-  - CPF
-  - RG
-- Convênio:
-  - Nome
-  - CNPJ
-  - Tempo de carência
+ - id
+ - Nome
+ - Data de nascimento
+ - Genero
+ - Uso_medicamento
+ - Documentos -> (RG, Digito, CPF, cartao_sus, status_paciente, data_de_cadastro, ultima_alteracao)
+ - Contatos -> (Email, Telefone)
+ - Endereco -> (CEP, rua/avenida, numero/bloco, complemento, bairro, cidade, e estado).
+ - Tipo_sanguineo
+ - Convenio -> (nome, CNPJ, tempo_carencia e numero_carteira).
+ - Alergias -> (alimento, observação e reação)
+
+## CODE:
+```kt
+ "_id": "pac02",
+    "nome": "Lucas Fernando Oliveira",
+    "data_nascimento": "1995.05.15",
+    "genero": "masculino",
+    "uso_medicamento": false,
+
+    "documento": {
+      "RG": "98765432",
+      "digito": "5",
+      "CPF": 12345678901,
+      "cartao_sus": 987654321234567,
+      "status_paciente": "1",
+      "data_de_cadastro": "2023.08.20",
+      "ultima_alteracao": "2023.08.20"
+    },
+    "contato": {
+      "contato_1": {
+        "email": "lucasfer1995@gmail.com",
+        "telefone": 11987654321,
+        "whatsapp": true,
+        "telefone_fixo": false
+      },
+
+      "contato_2": {
+        "telefone": 1123456789,
+        "whatsapp": false,
+        "telefone_fixo": true
+      }
+    },
+
+    "endereco": {
+      "cep": "12345-678",
+      "rua/avenida": "Avenida Brasil",
+      "numero/bloco": "45",
+      "complemento": "apto 12",
+      "bairro": "Centro",
+      "cidade": "Rio de Janeiro",
+      "estado": "Rio de Janeiro"
+    },
+    "tipo_sanguineo": "O-",
+
+    "convenio": {
+      "nome": "Saúde Total",
+      "cpnj": "98.765.432/0001-01",
+      "tempo_carencia": "30 dias",
+      "numero_carteira": "3456789/0003"
+    },
+
+    "alergias": {
+      "alergia_1": {
+        "alimento": "Amendoim",
+        "observacao": "Reação severa. Necessita de atendimento imediato.",
+        "reacao": "Inchaço, Dificuldade para respirar."
+      },
+
+      "alergia_2": {
+        "remedio": "Ibuprofeno",
+        "reação": "Erupção cutânea, Náusea."
+      }
+    }
+  }
+```
 
 ### Registro de Consultas
 - As consultas também têm sido registradas em planilhas, com as seguintes informações:
