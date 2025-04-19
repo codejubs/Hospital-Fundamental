@@ -74,6 +74,7 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
       }
     ]
   }
+```
 
 ### Cadastro de Pacientes
 - Os pacientes também precisam de cadastro, contendo dados pessoais:
