@@ -226,4 +226,4 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
 ```
 
 ## MAPA MENTAL
-<img src="<img src="[URL_da_Imagem](https://cdn.discordapp.com/attachments/996915775866679408/1363233745481629768/image.png?ex=680549dc&is=6803f85c&hm=531d48a2dd5e309647a9b5ec304eef42ccdce4d40bdcf9cd4c642a6ea47880a5&)" alt="Meu Mapa Mental">" alt="Texto Alternativo">
+![mapa mental](https://github.com/user-attachments/assets/146f62cc-73fa-4cfa-b9a7-9ea9aa45d385)
