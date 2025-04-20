@@ -231,4 +231,89 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
 ## Crie um script e nele inclua consultas que retornem:
 
 * Todos os dados e o valor médio das consultas do ano de 2020 e das que foram feitas sob convênio.
-Code: 
+  R: Valor médio das consultas sem conveniadas é R$ 200,00.
+  
+Code:
+```js
+db.consultas.aggregate([
+  {
+    $addFields: {
+      dataConvertida: { $toDate: "$data_hora" }
+    }
+  },
+  {
+    $match: {
+      dataConvertida: {
+        $gte: ISODate("2020-01-01T00:00:00Z"),
+        $lt: ISODate("2021-01-01T00:00:00Z")
+      }
+    }
+  },
+  {
+    $group: {
+      _id: {
+        temConvenio: {
+          $cond: [
+            { $and: [{ $ne: ["$convenio", null] }, { $ne: ["$convenio", false] }] },
+            "Com Convênio",
+            "Sem Convênio"
+          ]
+        }
+      },
+      valorMedio: { $avg: "$valor" },
+      totalConsultas: { $sum: 1 }
+    }
+  }
+])
+`````
+
+* Todos os dados das internações que tiveram data de alta maior que a data prevista para a alta.
+  
+  Code:
+```js
+db.internacoes.find({
+  $expr: { $gt: ["$data_efetiva_alta", "$data_prevista_alta"] }
+});
+````
+
+* Receituário completo da primeira consulta registrada com receituário associado.
+ R:
+```js
+_id: 'consul01',
+  CRM_medico: 'SC45938',
+  id_paciente: 'pac02',
+  valor: 190,
+  conveniada: true,
+  especialidade_buscada: 'Clínico Geral',
+  descricao: 'Consulta para avaliação de dor de cabeça e prescrição de analgésicos.',
+  data_hora: '2015-03-15T14:30:00Z',
+  receita: {
+    medicamentos: [
+      {
+        nome: 'Paracetamol',
+        quantidade: '500mg',
+        instrucoes: 'Tomar 1 comprimido a cada 8 horas'
+      },
+      {
+        nome: 'Amoxicilina',
+        quantidade: '250mg',
+        instrucoes: 'Tomar 1 cápsula a cada 12 horas'
+      }
+    ]
+  },
+  convenio: {
+    nome: 'Saúde Total',
+    cpnj: '98.765.432/0001-01',
+    tempo_carencia: '30 dias',
+    numero_carteira: '3456789/0003'
+  }
+}
+```
+  
+Code:
+```js
+db.consultas.find({
+receita: {$exists: true}
+}).sort({data_hora: 1}).limit(1)
+````
+
