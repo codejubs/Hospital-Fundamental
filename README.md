@@ -319,6 +319,7 @@ receita: {$exists: true}
 }).sort({data_hora: 1}).limit(1)
 ````
 *Todos os dados da consulta de maior valor e também da de menor valor (ambas as consultas não foram realizadas sob convênio).
+
 R: O Maior valor é de R$ 260,00. A Menor é de R$ 180,00.
 
  Code: (Maior) e (Menor)
@@ -331,3 +332,64 @@ db.consultas.find({
  conveniada: false
 }).sort({valor: 1}).limit(1)
 ```
+* Todos os dados das internações em seus respectivos quartos, calculando o total da internação a partir do valor de diária do quarto e o número de dias entre a entrada e a alta.
+
+ Code:
+```js
+db.internacoes.aggregate([
+  {
+    $addFields: {
+      data_entrada_convertida: {
+        $dateFromString: {
+          dateString: "$data_de_entrada",
+          format: "%Y.%m.%d %H:%M:%S"
+        }
+      },
+      data_alta_convertida: {
+        $dateFromString: {
+          dateString: "$data_efetiva_alta",
+          format: "%Y.%m.%d %H:%M:%S"
+        }
+      }
+    }
+  },
+  {
+    $addFields: {
+      diasInternacao: {
+        $dateDiff: {
+          startDate: "$data_entrada_convertida",
+          endDate: "$data_alta_convertida",
+          unit: "day"
+        }
+      }
+    }
+  },
+  {
+    $lookup: {
+      from: "quartos",
+      localField: "id_quarto",
+      foreignField: "id_quarto", // <-- nome do campo certo no "quartos"
+      as: "detalhes_quarto"
+    }
+  },
+  { $unwind: "$detalhes_quarto" },
+  {
+    $addFields: {
+      total_internacao: {
+        $multiply: ["$detalhes_quarto.valor_diaria", "$diasInternacao"]
+      }
+    }
+  },
+  {
+    $project: {
+      _id: 1,
+      id_paciente: 1,
+      id_quarto: 1,
+      diasInternacao: 1,
+      total_internacao: 1,
+      "detalhes_quarto.tipo_quarto": 1,
+      "detalhes_quarto.valor_diaria": 1
+    }
+  }
+])
+````
