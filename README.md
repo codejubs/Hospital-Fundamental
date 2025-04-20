@@ -227,3 +227,8 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
 
 ## MAPA MENTAL
 ![mapa mental](https://github.com/user-attachments/assets/146f62cc-73fa-4cfa-b9a7-9ea9aa45d385)
+
+## Crie um script e nele inclua consultas que retornem:
+
+* Todos os dados e o valor médio das consultas do ano de 2020 e das que foram feitas sob convênio.
+Code: 
