@@ -368,7 +368,7 @@ db.internacoes.aggregate([
     $lookup: {
       from: "quartos",
       localField: "id_quarto",
-      foreignField: "id_quarto", // <-- nome do campo certo no "quartos"
+      foreignField: "id_quarto",
       as: "detalhes_quarto"
     }
   },
