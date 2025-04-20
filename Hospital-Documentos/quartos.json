@@ -1,0 +1,17 @@
+[
+  {
+    "id_quarto": "quar01",
+    "tipo_quarto": "Enfermaria",
+    "valor_diaria": 200.00
+  },
+  {
+    "id_quarto": "quar02",
+    "tipo_quarto": "Quarto Duplo",
+    "valor_diaria": 180.00
+  },
+  {
+    "id_quarto": "quar03",
+    "tipo_quarto": "Apartamento",
+    "valor_diaria": 400.00
+  }
+]
