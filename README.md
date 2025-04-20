@@ -231,7 +231,8 @@ Alguns registros antigos ainda estão em formulário de papel, mas será necess�
 ## Crie um script e nele inclua consultas que retornem:
 
 * Todos os dados e o valor médio das consultas do ano de 2020 e das que foram feitas sob convênio.
-  R: Valor médio das consultas sem conveniadas é R$ 200,00.
+
+   R: Valor médio das consultas sem conveniadas é R$ 200,00.
   
 Code:
 ```js
@@ -277,7 +278,8 @@ db.internacoes.find({
 ````
 
 * Receituário completo da primeira consulta registrada com receituário associado.
- R:
+
+R:
 ```js
 _id: 'consul01',
   CRM_medico: 'SC45938',
@@ -316,4 +318,16 @@ db.consultas.find({
 receita: {$exists: true}
 }).sort({data_hora: 1}).limit(1)
 ````
+*Todos os dados da consulta de maior valor e também da de menor valor (ambas as consultas não foram realizadas sob convênio).
+R: O Maior valor é de R$ 260,00. A Menor é de R$ 180,00.
 
+ Code: (Maior) e (Menor)
+```js
+db.consultas.find({
+ conveniada: false
+}).sort({valor: -1}).limit(1)
+
+db.consultas.find({
+ conveniada: false
+}).sort({valor: 1}).limit(1)
+```
