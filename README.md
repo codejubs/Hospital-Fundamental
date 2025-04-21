@@ -393,3 +393,264 @@ db.internacoes.aggregate([
   }
 ])
 ````
+* Data, procedimento e número de quarto de internações em quartos do tipo “apartamento”.
+  
+ R: 
+```js
+{
+  _id: 'inter01',
+  id_paciente: 'pac14',
+  CRM_medico: 'RJ986342',
+  data_de_entrada: '2016.04.02 14:00:59',
+  data_prevista_alta: '2016.04.05 10:56:50',
+  data_efetiva_alta: '2016.04.06 09:30:01',
+  procedimentos: [
+    'Exame de Sangue',
+    'Observação Psiquiátrica'
+  ],
+  id_quarto: 'quar03',
+  COREN_enfermeiros: [
+    'CRE74832',
+    'CRE85241'
+  ]
+},
+{
+  _id: 'inter06',
+  id_paciente: 'pac14',
+  CRM_medico: 'RJ986342',
+  data_de_entrada: '2017.04.08 08:00:02',
+  data_prevista_alta: '2017.04.08 17:00:32',
+  data_efetiva_alta: '2017.04.09 09:00:04',
+  procedimentos: [
+    'Terapia Comportamental'
+  ],
+  id_quarto: 'quar03',
+  COREN_enfermeiros: [
+    'CRE74832',
+    'CRE85275',
+    'CRE96385'
+  ]
+},
+{
+  _id: 'inter07',
+  id_paciente: 'pac05',
+  CRM_medico: 'SP523469',
+  data_de_entrada: '2022.02.08 03:27:02',
+  data_prevista_alta: '2022.02.25 12:55:20',
+  data_efetiva_alta: '2022.02.25 22:50:55',
+  procedimentos: [
+    'Cirurgia Herniorrafia'
+  ],
+  id_quarto: 'quar03',
+  COREN_enfermeiros: [
+    'CRE14789',
+    'CRE14785'
+  ]
+},
+{
+  _id: 'inter07',
+  id_paciente: 'pac05',
+  CRM_medico: 'SP523469',
+  data_de_entrada: '2022.02.08 03:27:02',
+  data_prevista_alta: '2022.02.25 12:55:20',
+  data_efetiva_alta: '2022.02.25 22:50:55',
+  procedimentos: [
+    'Cirurgia Herniorrafia'
+  ],
+  id_quarto: 'quar03',
+  COREN_enfermeiros: [
+    'CRE14789',
+    'CRE14785'
+  ]
+}
+````
+
+ #Code: 
+```js
+db.internacoes.find({
+ id_quarto: "quar03"
+});
+`````
+* Nome do paciente, data da consulta e especialidade de todas as consultas em que os pacientes eram menores de 18 anos na data da consulta e cuja especialidade não seja “pediatria”, ordenando por data de realização da consulta.
+
+#Code:
+````js
+{
+db.consultas.aggregate([
+  {
+    $addFields: {
+      idade_no_dia: {
+        $dateDiff: {
+          startDate: { $dateFromString: { dateString: "$data_de_nascimento" } },
+          endDate: { $dateFromString: { dateString: "$data_consulta" } },
+          unit: "year"
+        }
+      }
+    }
+  },
+  {
+    $match: {
+      idade_no_dia: { $lt: 18 }, 
+      especialidade: { $ne: "pediatria" } 
+    }
+  },
+  {
+    $sort: { data_consulta: 1 } 
+  },
+  {
+    $project: {
+      _id: 0,
+      nome_paciente: 1,
+      data_consulta: 1,
+      especialidade: 1
+    }
+  }
+])
+}
+````
+*Nome do paciente, nome do médico, data da internação e procedimentos das internações realizadas por médicos da especialidade “gastroenterologia”, que tenham acontecido em “enfermaria”.
+
+#Code:
+````js
+{
+db.internacoes.aggregate([
+  { $lookup: { from: "medicos", localField: "medico_responsavel", foreignField: "documentos.crm", as: "detalhes_medico" } },
+  { $unwind: "$detalhes_medico" },
+  { $match: { "detalhes_medico.especialidade": "gastroenterologia", tipo_de_quarto: "enfermaria" } },
+  { $project: { nome_paciente: 1, nome_medico: "$detalhes_medico.nome", data_internacao: "$data_entrada", procedimentos: 1 } }
+])
+}
+````
+*Os nomes dos médicos, seus CRMs e a quantidade de consultas que cada um realizou.
+
+#Code:
+````js
+{
+db.consultas.aggregate([
+  {
+    $group: {
+      _id: "$crm", // Agrupando por CRM do médico responsável
+      numero_consultas: { $sum: 1 } 
+    }
+  },
+  {
+    $lookup: {
+      from: "medicos", // Nome da coleção de médicos
+      localField: "_id", // Campo agrupado (CRM)
+      foreignField: "documentos.crm", 
+      as: "detalhes_medico"
+    }
+  },
+  { 
+    $unwind: { path: "$detalhes_medico", preserveNullAndEmptyArrays: true } 
+  },
+  {
+    $project: {
+      _id: 0, // Remove o ID do agrupamento
+      nome_medico: "$detalhes_medico.nome", 
+      crm: "$_id", // CRM do médico
+      numero_consultas: 1 
+    }
+  }
+])
+}
+````
+*Todos os médicos que tenham "Gabriel" no nome. 
+
+R:
+````js
+{
+  _id: 'doc4',
+  nome: 'Gabriel Kotlin da Silva',
+  data_nascimento: '1999.02.28',
+  genero: 'masculino',
+  especialidade: 'Cardiologista',
+  tipo: 'Generalista',
+  'endereço': {
+    'rua/avenida': 'Av. 23 de Maio',
+    'numero/bloco': '1010',
+    complemento: 'Casa',
+    bairro: 'Centro',
+    cidade: 'São Paulo',
+    estado: 'São Paulo',
+    cep: '01311-000'
+  },
+  contato: {
+    telefone: 11526482359,
+    whatsapp: true,
+    email: 'gabrielkotlin@hospitalmilu.com',
+    email_pessoal: 'gabrielkotlindoc@gmail.com - não mandar emails sobre trabalho!'
+  },
+  status: 'não está em atividade no momento',
+  'observação': 'não está recebendo pacientes',
+  em_atividade: false,
+  documentos: {
+    CPF: 53462896415,
+    CRM: 'RJ56324',
+    RG: '18934985',
+    digito: '7'
+  },
+  agenda: {
+    'segunda-feira': 'Plantão',
+    'terca-feira': 'Folga',
+    'quarta-feira': 'Entre 9h à 19h',
+    'quinta-feira': 'Plantão',
+    'sexta-feira': 'Entre 6h à 12h',
+    sabado: 'Entre 8h à 17h',
+    domingo: 'Plantão',
+    feriados: 'Folga'
+  },
+  plantao: {
+    dia: 'segunda-feira',
+    inicio: '20:00',
+    fim: '14:00'
+  },
+  plantao_2: {
+    dia: 'domingo',
+    inicio: '20:00',
+    fim: '14:00'
+  }
+}
+````
+
+#Code: 
+````
+{
+db.medicos.find({
+nome: /Gabriel/
+})
+}
+````
+*Os nomes, CORENs e número de internações de enfermeiros que participaram de mais de uma internação.
+
+#Code:
+`````js
+{
+db.internacoes.aggregate([
+  { $unwind: "$enfermeiras_responsaveis" },
+  {
+    $group: {
+      _id: "$enfermeiras_responsaveis",
+      totalInternacoes: { $sum: 1 }
+    }
+  },
+  { $match: { totalInternacoes: { $gt: 1 } } },
+  {
+    $lookup: {
+      from: "enfermeiros",
+      localField: "_id",
+      foreignField: "coren",
+      as: "detalhesEnfermeiro"
+    }
+  },
+  {
+    $project: {
+      coren: "$_id",
+      nome: { $arrayElemAt: ["$detalhesEnfermeiro.nome", 0] },
+      totalInternacoes: 1
+    }
+  }
+])
+}
+``````
+
